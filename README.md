@@ -17,7 +17,7 @@ This repository is a protocol kit, not a software package. It contains reusable 
 |---|---|
 | [Idea Shaping Protocol v1](protocols/idea-shaping-protocol-v1.md) | Use when an idea is still rough and you need to turn it into a clear structure before asking AI to write, plan, design, or build anything. |
 | [HTML Page & Tool Briefing Protocol v2](protocols/html%20page%20and%20tool%20briefing%20protocol%20v2.md) | Use when you need to guide an AI from raw intake to a complete implementation brief for a static HTML page, web surface, or local tool, with explicit structure, DOM order, responsive behavior, copy, data schema, and implementation rails. |
-| [Field Findings 2.0 Protocol v1](protocols/field-findings-2-0-protocol-v1.md) | Capturing, comparing, and promoting analytical findings without premature convergence. |
+| [Field Findings & Bugs Protocol v2](protocols/field-findings-and-bugs-protocol-v2.md) | Use during reviews or multi-lens analysis to capture findings and bugs as a structured artifact, keeping evidence, inference, uncertainty, relations, and later promotion separate. |
 | [HTML Website Discovery Set Protocol v1.2](protocols/html-website-discovery-set-protocol-v1-2.md) | Preparing discovery files for static HTML and GitHub Pages publication surfaces. |
 | [PHI-Lens Protocol v4.a](protocols/phi-lens-protocol-v4-a.md) | Resolving multi-constraint AI tasks through asymmetric force hierarchy. Proportion and growth inspired by Fibonacci and golden ratio logic, not equal weight. |
 | [Pre-Task Expansion Protocol v1](protocols/pre-task-expansion-protocol-v1.md) | Expanding a task before execution so the obvious solution does not dominate too early. |
