@@ -600,4 +600,3 @@ BANNED:
 - substituting summary or distillation for source inspection
 - producing applied-fix language when only advisory output is valid
 - choosing between conflicting REFERENCE and REAL_TARGET report without OP resolution
-
