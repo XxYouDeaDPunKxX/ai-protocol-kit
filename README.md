@@ -19,7 +19,7 @@ This repository is a protocol kit, not a software package. It contains reusable 
 | [Codex HTML One Shot Plus Protocol v2](protocols/codex-html-one-shot-plus-protocol-v2.md) | Preparing a complete brief for an AI-generated HTML or digital output. |
 | [Field Findings 2.0 Protocol v1](protocols/field-findings-2-0-protocol-v1.md) | Capturing, comparing, and promoting analytical findings without premature convergence. |
 | [HTML Website Discovery Set Protocol v1.2](protocols/html-website-discovery-set-protocol-v1-2.md) | Preparing discovery files for static HTML and GitHub Pages publication surfaces. |
-| [PHI-Lens Protocol v4.a](protocols/phi-lens-protocol-v4-a.md) | Running non-trivial AI tasks with concurrent evaluators and visible operational state. |
+| [PHI-Lens Protocol v4.a](protocols/phi-lens-protocol-v4-a.md) | Resolving multi-constraint AI tasks through asymmetric force hierarchy. Proportion and growth inspired by Fibonacci and golden ratio logic, not equal weight. |
 | [Pre-Task Expansion Protocol v1](protocols/pre-task-expansion-protocol-v1.md) | Expanding a task before execution so the obvious solution does not dominate too early. |
 | [Output for Real Readers Protocol v2](protocols/output-for-real-readers-protocol-v2.md) | Building a closed brief for final output aimed at real readers. |
 | [Public Page Publication Protocol v2](protocols/public-page-publication-protocol-v2.md) | Preparing a public page or site surface before publication. |
