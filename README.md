@@ -15,7 +15,7 @@ This repository is a protocol kit, not a software package. It contains reusable 
 
 | Protocol | Use when |
 |---|---|
-| [Agnostic Idea Development Protocol v1](protocols/agnostic-idea-development-protocol-v1.md) | Turning a raw idea into a coherent, constraint-aware structure. |
+| [Idea Shaping Protocol v1](protocols/idea-shaping-protocol-v1.md) | Use when an idea is still rough and you need to turn it into a clear structure before asking AI to write, plan, design, or build anything. |
 | [Codex HTML One Shot Plus Protocol v2](protocols/codex-html-one-shot-plus-protocol-v2.md) | Preparing a complete brief for an AI-generated HTML or digital output. |
 | [Field Findings 2.0 Protocol v1](protocols/field-findings-2-0-protocol-v1.md) | Capturing, comparing, and promoting analytical findings without premature convergence. |
 | [HTML Website Discovery Set Protocol v1.2](protocols/html-website-discovery-set-protocol-v1-2.md) | Preparing discovery files for static HTML and GitHub Pages publication surfaces. |
