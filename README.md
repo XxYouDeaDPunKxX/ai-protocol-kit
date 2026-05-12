@@ -26,7 +26,7 @@ This repository is a protocol kit, not a software package. It contains reusable 
 | [Public Page Publication Protocol v2](protocols/public-page-publication-protocol-v2.md) | Preparing a public page or site surface before publication. |
 | [README Framing and Authoring Protocol v2](protocols/readme-framing-authoring-protocol-v2.md) | Writing or restructuring a README from repository truth instead of template momentum. |
 | [Structural Shaping Protocol v1](protocols/structural-shaping-protocol-v1.md) | Turning ambiguous input into operational form without premature synthesis. |
-| [System Reading Protocol v0.2](protocols/system-reading-protocol-v0-2.md) | Reading the gap between declared intent and real system behavior. |
+| [System Reading Protocol v0.2](protocols/system-reading-protocol-v0-2.md) | Use when reading the gap between declared intent and observable behavior to extract the operative principle of a system without producing premature solutions. |
 | [Triad AI Orchestration Protocol v3](protocols/triad-ai-orchestration-protocol-v3.md) | Coordinating an operator, an executing AI, and a reviewing AI without direct AI-to-AI authority. |
 
 ## How to use
