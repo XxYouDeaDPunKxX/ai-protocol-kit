@@ -1,4 +1,4 @@
-PUBLIC PAGE PUBLICATION PROTOCOL v1
+PUBLIC PAGE PUBLICATION PROTOCOL v2
 
 Use this file before preparing, publishing, or restructuring any public-facing page or site surface.
 
