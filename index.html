@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ai-protocol-kit — AI behavior contracts and operational protocols</title>
+  <meta name="description" content="A guided index for AI behavior contracts and operational protocols used in practical AI-assisted work.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://xxyoudeadpunkxx.github.io/ai-protocol-kit/">
+  <link rel="alternate" type="text/plain" href="llms.txt" title="LLM-readable protocol index">
+  <link rel="alternate" type="application/json" href="raw-manifest.json" title="Machine-readable manifest">
+  <link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="ai-protocol-kit">
+  <meta property="og:description" content="AI behavior contracts and operational protocols for practical AI-assisted work.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://xxyoudeadpunkxx.github.io/ai-protocol-kit/">
+  <meta property="og:image" content="https://xxyoudeadpunkxx.github.io/ai-protocol-kit/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareSourceCode",
+    "name": "ai-protocol-kit",
+    "description": "AI behavior contracts and operational protocols for practical AI-assisted work.",
+    "url": "https://xxyoudeadpunkxx.github.io/ai-protocol-kit/",
+    "mainEntityOfPage": "https://xxyoudeadpunkxx.github.io/ai-protocol-kit/",
+    "codeRepository": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "programmingLanguage": ["Markdown", "HTML", "CSS", "JavaScript"],
+    "runtimePlatform": "GitHub Pages",
+    "applicationCategory": "AI workflow protocols",
+    "isAccessibleForFree": true,
+    "author": { "@type": "Person", "name": "MaRCoRe", "alternateName": "XxYouDeaDPunKxX" },
+    "keywords": ["AI protocols", "behavioral contracts", "AI-assisted work", "GitHub Pages", "README", "HTML", "publication", "review"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="#top" aria-label="ai-protocol-kit home"><span class="brand-mark">⌘</span><span>ai-protocol-kit</span></a>
+      <nav class="nav-links" aria-label="Page navigation">
+        <a href="#guide">Guide</a>
+        <a href="#library">Library</a>
+        <a href="#how">How to use</a>
+        <a href="https://github.com/XxYouDeaDPunKxX/ai-protocol-kit" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section-shell hero" id="top">
+      <div>
+        <p class="eyebrow">AI protocol kit</p>
+        <h1>ai-protocol-kit</h1>
+        <p class="hero-line">AI behavior contracts and operational protocols for practical AI-assisted work.</p>
+        <p class="hero-support">An evolving kit for shaping ideas, reviewing work, preparing pages and repositories, writing for real readers, and keeping AI sessions easier to inspect.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#guide">Explore protocols</a>
+          <a class="button" href="https://github.com/XxYouDeaDPunKxX/ai-protocol-kit" target="_blank" rel="noopener noreferrer">Open GitHub repo</a>
+        </div>
+      </div>
+      <aside class="hero-panel" aria-label="Protocol path preview">
+        <ol>
+          <li><span>1</span> Start from the work in front of you.</li>
+          <li><span>2</span> Mark what feels off.</li>
+          <li><span>3</span> Choose what you want to make happen.</li>
+          <li><span>4</span> Use the protocol path without forcing one answer.</li>
+        </ol>
+      </aside>
+    </section>
+
+    <section class="section-shell">
+      <div class="intro-block">
+        <p class="eyebrow">What this is</p>
+        <h2>A practical index for working with AI before the work breaks.</h2>
+        <p>These are not magic prompts. They are working instructions you give to the AI so it knows how to approach a task, what to check, what not to assume, when to stop, and what kind of output is acceptable.</p>
+      </div>
+    </section>
+
+    <section class="section-shell guide-section" id="guide" aria-labelledby="guideTitle">
+      <div class="section-heading">
+        <p class="eyebrow">Guided discovery</p>
+        <h2 id="guideTitle">Find a protocol path</h2>
+        <p>Start from the work in front of you. The guide helps you find useful protocols without forcing a single answer.</p>
+      </div>
+      <noscript><p class="noscript-note">Interactive protocol discovery needs JavaScript. The full protocol index is available in <a href="llms.txt">llms.txt</a>.</p></noscript>
+      <div class="picker-layout">
+        <div class="picker-steps" id="pickerSteps" aria-label="Protocol guide choices"></div>
+        <aside class="protocol-result" aria-labelledby="resultTitle">
+          <p class="step-kicker">Step 4</p>
+          <h3 id="resultTitle">Protocol path</h3>
+          <div id="resultPanel" aria-live="polite"></div>
+          <button class="button" type="button" id="resetAll">Reset</button>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section-shell library-section" id="library" aria-labelledby="libraryTitle">
+      <div class="section-heading">
+        <p class="eyebrow">Protocol library</p>
+        <h2 id="libraryTitle">Browse the full kit</h2>
+        <p>Use the guide, filter by group, or search directly. The library stays available even when the guide points to a best match.</p>
+      </div>
+      <div class="library-controls">
+        <div class="group-chip-row" id="groupFilters" aria-label="Protocol groups"></div>
+        <div class="search-row">
+          <label for="protocolSearch">Search</label>
+          <input id="protocolSearch" type="search" placeholder="README, public page, review, GitHub Pages…">
+          <p class="result-count" id="resultCount" aria-live="polite"></p>
+        </div>
+      </div>
+      <div class="protocol-grid" id="protocolGrid"></div>
+    </section>
+
+    <section class="section-shell how-section" id="how" aria-labelledby="howTitle">
+      <div class="section-heading">
+        <p class="eyebrow">How to use</p>
+        <h2 id="howTitle">Give the protocol before the work starts.</h2>
+      </div>
+      <ol class="use-steps">
+        <li>Pick the protocol closest to the actual job.</li>
+        <li>Give it to the AI before execution.</li>
+        <li>State the task, target files or material, and hard constraints.</li>
+        <li>Let the protocol guide questions, assumptions, review, and output.</li>
+      </ol>
+      <p class="callout">Use the smallest set that fits the task. Do not stack protocols casually.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-shell">
+      <p>CC BY-SA 4.0 · ai-protocol-kit</p>
+      <nav aria-label="Machine-readable files">
+        <a href="llms.txt">llms.txt</a>
+        <a href="raw-manifest.json">raw-manifest.json</a>
+        <a href="sitemap.xml">sitemap.xml</a>
+        <a href="robots.txt">robots.txt</a>
+      </nav>
+    </div>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <script src="picker-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
