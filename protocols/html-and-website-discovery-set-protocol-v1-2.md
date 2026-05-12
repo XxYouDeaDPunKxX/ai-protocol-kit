@@ -1,0 +1,425 @@
+HTML AND WEBSITE DISCOVERY SET PROTOCOL
+Version: v1.2
+Type: LLM operational protocol
+Scope: machine-readable discovery layer for static HTML pages, websites, GitHub Pages, and other static publication surfaces
+
+---
+
+CORE PRINCIPLE
+
+Discovery Set is infrastructure.
+
+It helps crawlers, bots, LLM readers, and external systems understand the published artifact.
+
+It must not compete with the human page.
+
+---
+
+PUBLICATION ROOT
+
+This protocol applies to static HTML pages and websites in general.
+
+GitHub Pages is the reference case because project-site paths make discovery URLs easier to break.
+
+For non-GitHub deployments, replace the GitHub Pages examples with the actual publication root, such as:
+
+https://example.com/
+https://example.com/project/
+
+Always distinguish:
+
+DOMAIN ROOT:
+https://USER.github.io/
+
+PROJECT ROOT:
+https://USER.github.io/REPO/
+
+For GitHub Pages project sites, the publication root is usually:
+
+https://USER.github.io/REPO/
+
+Never assume `/llms.txt` unless the site is actually published at the domain root.
+
+Prefer absolute URLs when in doubt.
+
+---
+
+BINARY CLASSIFIER
+
+Q: does this published artifact expose more than one canonical HTML URL under the same publication root?
+
+YES → TYPE: SITE
+NO  → TYPE: PAGE
+
+Notes:
+- anchor links do not make a SITE
+- GitHub repository links do not make a SITE
+- links to llms.txt, raw-manifest.json, sitemap.xml, assets, or external pages do not make a SITE
+- only multiple canonical HTML pages under the same publication root make a SITE
+
+---
+
+TYPE: PAGE
+
+Definition:
+single canonical HTML URL, usually one index.html.
+
+HEAD
+
+Required:
+- <title>
+- <meta name="description">
+- <meta name="robots" content="index, follow">
+- <link rel="canonical" href="https://USER.github.io/REPO/">
+- <link rel="alternate" type="text/plain" href="llms.txt" title="LLM-readable index">
+- <link rel="alternate" type="application/json" href="raw-manifest.json" title="Machine-readable manifest">
+- Open Graph:
+  - og:title
+  - og:description
+  - og:type="website"
+  - og:url
+  - og:image
+- JSON-LD:
+  - SoftwareSourceCode if the page represents a repo, protocol, tool, kernel, framework, or code artifact
+  - WebPage if the page is editorial/static only
+- favicon
+
+ROOT
+
+Required files:
+- index.html
+- llms.txt
+- raw-manifest.json
+- robots.txt
+- sitemap.xml
+
+sitemap.xml:
+- single <url> entry for the canonical page URL
+
+robots.txt:
+- must cite sitemap.xml with absolute URL
+
+FOOTER
+
+Low-noise machine links:
+
+- llms.txt
+- raw-manifest.json
+- sitemap.xml
+
+Example:
+
+<!-- Discovery Set: low-noise links for crawlers, bots, and LLM readers. -->
+<div class="machine-links" aria-label="Machine-readable project files">
+  <span>Machine-readable:</span>
+  <a href="llms.txt">llms.txt</a>
+  <a href="raw-manifest.json">manifest</a>
+  <a href="sitemap.xml">sitemap</a>
+</div>
+
+---
+
+TYPE: SITE
+
+Definition:
+multiple canonical HTML URLs under the same publication root.
+
+Example:
+- https://USER.github.io/REPO/
+- https://USER.github.io/REPO/docs/
+- https://USER.github.io/REPO/compiler/
+- https://USER.github.io/REPO/reference/
+
+HEAD — EVERY PAGE
+
+Required:
+- <title> page-specific
+- <meta name="description"> page-specific
+- <meta name="robots" content="index, follow">
+- <link rel="canonical" href="[ABSOLUTE THIS PAGE URL]">
+- <link rel="alternate" type="text/plain" href="[ABSOLUTE SITE_ROOT]/llms.txt">
+- <link rel="alternate" type="application/json" href="[ABSOLUTE SITE_ROOT]/raw-manifest.json">
+- Open Graph:
+  - og:title page-specific
+  - og:description page-specific
+  - og:type="website"
+  - og:url = absolute current page URL
+  - og:image
+- favicon
+
+JSON-LD:
+- index page:
+  - WebSite
+  - optionally SoftwareSourceCode as mainEntity if the site represents a repo/tool/protocol
+- subpages:
+  - WebPage
+  - optionally reference the parent WebSite
+
+ROOT
+
+Required files:
+- index.html
+- llms.txt
+- raw-manifest.json
+- robots.txt
+- sitemap.xml
+
+sitemap.xml:
+- one <url> entry per canonical HTML page
+
+robots.txt:
+- must cite sitemap.xml with absolute URL
+
+FOOTER — EVERY PAGE
+
+Low-noise machine links.
+
+For index page, relative is acceptable:
+
+<a href="llms.txt">llms.txt</a>
+<a href="raw-manifest.json">manifest</a>
+<a href="sitemap.xml">sitemap</a>
+
+For subpages, use either correct relative paths:
+
+<a href="../llms.txt">llms.txt</a>
+
+or safer absolute paths:
+
+<a href="https://USER.github.io/REPO/llms.txt">llms.txt</a>
+<a href="https://USER.github.io/REPO/raw-manifest.json">manifest</a>
+<a href="https://USER.github.io/REPO/sitemap.xml">sitemap</a>
+
+---
+
+PATH RULES
+
+canonical:
+- always absolute URL
+
+og:url:
+- always absolute URL
+
+og:image:
+- always absolute URL
+
+robots sitemap:
+- always absolute URL
+
+llms.txt / raw-manifest.json in HEAD:
+- PAGE index: relative allowed
+- SITE index: relative allowed
+- SITE subpages: absolute preferred
+
+Never use root-relative paths like:
+
+/llms.txt
+/raw-manifest.json
+/sitemap.xml
+
+unless the site is published at:
+
+https://USER.github.io/
+
+For GitHub Pages project sites, root-relative paths are usually wrong.
+
+---
+
+JSON-LD RULES
+
+Use SoftwareSourceCode when the page represents:
+- repo
+- protocol
+- framework
+- kernel
+- compiler
+- developer tool
+- operational system
+- technical artifact
+
+Use WebPage when the page represents:
+- article
+- documentation page
+- static editorial page
+- human-facing explainer without repo/tool identity
+
+Use WebSite when:
+- multiple canonical pages exist under the same publication root
+
+Do not spam:
+- keywords must reflect the repo
+- about must reflect the repo
+- do not inject generic SEO terms
+- do not list concepts that are not actually present
+
+Recommended SoftwareSourceCode fields:
+- @context
+- @type
+- name
+- alternateName if useful
+- description
+- url
+- mainEntityOfPage
+- codeRepository
+- license
+- programmingLanguage
+- runtimePlatform
+- applicationCategory
+- isAccessibleForFree
+- author
+- about
+- keywords
+
+---
+
+ROBOTS.TXT MINIMUM
+
+User-agent: *
+Allow: /
+
+Sitemap: https://USER.github.io/REPO/sitemap.xml
+
+---
+
+SITEMAP.XML — PAGE MINIMUM
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://USER.github.io/REPO/</loc>
+  </url>
+</urlset>
+
+---
+
+SITEMAP.XML — SITE MINIMUM
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://USER.github.io/REPO/</loc>
+  </url>
+  <url>
+    <loc>https://USER.github.io/REPO/docs/</loc>
+  </url>
+  <url>
+    <loc>https://USER.github.io/REPO/compiler/</loc>
+  </url>
+</urlset>
+
+---
+
+ROOT FILE RULES
+
+llms.txt:
+- root only
+- readable project index for LLM/crawler use
+- not stored in assets/
+
+raw-manifest.json:
+- root only
+- structured machine-readable project manifest
+- not stored in assets/
+
+robots.txt:
+- root only
+- cites sitemap.xml
+
+sitemap.xml:
+- root only
+- lists canonical HTML URLs
+
+---
+
+FOOTER RULES
+
+Footer links must be:
+- visible
+- low-noise
+- small
+- non-dominant
+- machine-oriented
+- not part of the main editorial hierarchy
+
+Correct:
+small raw-bus / machine-readable row in footer.
+
+Wrong:
+large visible manifest block inside the main page.
+
+---
+
+VALIDATION CHECKLIST
+
+This checklist is non-normative.
+
+It introduces no new rule.
+
+If this checklist conflicts with a specific section above, the specific section wins.
+
+Before publishing, verify:
+
+- canonical is absolute
+- og:url is absolute
+- og:image is absolute
+- robots.txt cites sitemap.xml with absolute URL
+- llms.txt is in publication root
+- raw-manifest.json is in publication root
+- sitemap.xml is in publication root
+- sitemap.xml lists canonical HTML URLs only
+- footer machine links are visible but low-noise
+- Discovery Set does not appear as main page content
+- manifest data is not duplicated as a large visible UI block
+- GitHub Pages project-site absolute URLs include /REPO/
+- no root-relative /llms.txt path is used unless domain-root publishing is confirmed
+- anchors, GitHub links, asset links, and machine-file links did not trigger SITE classification
+
+---
+
+MINIMUM PAGE TEMPLATE
+
+HEAD:
+- title
+- description
+- robots
+- canonical
+- alternate llms.txt
+- alternate raw-manifest.json
+- OG tags
+- JSON-LD
+- favicon
+
+ROOT:
+- index.html
+- llms.txt
+- raw-manifest.json
+- robots.txt
+- sitemap.xml
+
+FOOTER:
+- machine-readable links
+
+---
+
+MINIMUM SITE TEMPLATE
+
+EVERY PAGE HEAD:
+- page-specific title
+- page-specific description
+- robots
+- absolute canonical for current page
+- absolute llms.txt URL at publication root
+- absolute raw-manifest.json URL at publication root
+- page-specific OG
+- JSON-LD
+- favicon
+
+ROOT:
+- index.html
+- llms.txt
+- raw-manifest.json
+- robots.txt
+- sitemap.xml with all canonical HTML pages
+
+EVERY PAGE FOOTER:
+- low-noise machine-readable links
