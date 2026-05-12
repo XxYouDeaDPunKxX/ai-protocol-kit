@@ -27,7 +27,7 @@ This repository is a protocol kit, not a software package. It contains reusable 
 | [README Framing and Authoring Protocol v2](protocols/readme-framing-authoring-protocol-v2.md) | Writing or restructuring a README from repository truth instead of template momentum. |
 | [Structural Shaping Protocol v1](protocols/structural-shaping-protocol-v1.md) | Use when ambiguous input needs to be shaped into operational form before synthesis, with gates, evidence level, source boundaries, and artifact direction kept explicit. |
 | [System Reading Protocol v0.2](protocols/system-reading-protocol-v0-2.md) | Use when reading the gap between declared intent and observable behavior to extract the operative principle of a system without producing premature solutions. |
-| [Triad AI Orchestration Protocol v3](protocols/triad-ai-orchestration-protocol-v3.md) | Coordinating an operator, an executing AI, and a reviewing AI without direct AI-to-AI authority. |
+| [Triad AI Orchestration Protocol v3](protocols/triad-ai-orchestration-protocol-v3.md) | Use when running a review loop between an executing AI near the real target and a reviewing AI over snapshots, repo state, diffs, or files, with the operator mediating updates, preserving target authority, and keeping claims, patch status, and test evidence explicit. |
 
 ## How to use
 
