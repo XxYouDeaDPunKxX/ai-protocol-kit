@@ -140,7 +140,7 @@ the reader’s level: expert, informed, beginner, evaluator, maintainer, mixed, 
 the relationship between the README and the reader: peer, instructional, operational, reference, evaluative, mixed
 the primary reader action the README should enable
 what happens if the README fails: low stakes, moderate stakes, or high stakes
-whether the README should prioritize orientation, setup, usage, trust, explanation, or navigation
+whether the README should prioritize orientation, setup, usage, trust, explanation, reference, or navigation
 whether the README should stand mostly alone or mainly route into deeper docs
 whether the README should be narrow and operational or broad and explanatory
 
