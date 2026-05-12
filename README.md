@@ -15,6 +15,7 @@ This repository is a protocol kit, not a software package. It contains reusable 
 
 | Protocol | Use when |
 |---|---|
+| [GitHub Pages Discovery Set Protocol v1](protocols/github-pages-discovery-set-protocol-v1.md) | Use when preparing GitHub Pages user/org sites, project sites, or custom-domain Pages sites with correct publication roots, discovery files, canonical URLs, sitemap, robots handling, and low-noise machine-readable footer links without breaking GitHub Pages path rules. |
 | [Idea Shaping Protocol v1](protocols/idea-shaping-protocol-v1.md) | Use when an idea is still rough and you need to turn it into a clear structure before asking AI to write, plan, design, or build anything. |
 | [HTML Page & Tool Briefing Protocol v2](protocols/html%20page%20and%20tool%20briefing%20protocol%20v2.md) | Use when you need to guide an AI from raw intake to a complete implementation brief for a static HTML page, web surface, or local tool, with explicit structure, DOM order, responsive behavior, copy, data schema, and implementation rails. |
 | [Field Findings & Bugs Protocol v2](protocols/field-findings-and-bugs-protocol-v2.md) | Use during reviews or multi-lens analysis to capture findings and bugs as a structured artifact, keeping evidence, inference, uncertainty, relations, and later promotion separate. |
