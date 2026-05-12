@@ -1,0 +1,243 @@
+PUBLICATION PREPARATION PROTOCOL v2
+
+Use this file before performing any repository publication-preparation task.
+
+Purpose  
+Prepare a repository for clean GitHub publication.  
+Do not assume the project is a standard software repository.  
+Do not assume every repository needs the same files, workflows, or GitHub features.
+
+Core rule  
+Build the smallest publication package that correctly represents the project, its risks, and its intended public surface.
+
+Operating rules
+
+1. Follow the phases in order.
+2. Do not skip directly to file generation, git initialization, commit creation, remote creation, or push.
+3. Before acting, identify the environment, understand what the operation requires, anticipate likely failure points for that environment, choose the method that avoids them, and then act.
+4. If a meaningful ambiguity remains and could change licensing, visibility, deployment, or repository structure, stop and ask before modifying anything.
+5. Do not generate files, workflows, community templates, or Pages unless they are justified by the actual project and publication intent.
+6. Do not optimize for completeness by default. Optimize for correctness, minimality, and publication readiness.
+
+PHASE 1 - Classify the project
+
+Determine and report:
+
+- project name
+- project type
+- primary purpose
+- target audience
+- current status
+- maintenance model
+- intended visibility
+- primary published unit
+
+Use real evidence from the workspace.
+
+Possible project types include:
+
+- application
+- library
+- tool
+- documentation
+- content repository
+- template or kit
+- research repository
+- mixed repository
+- internal operational repository
+
+Possible primary published units include:
+
+- source repository
+- package
+- deployable application
+- static site
+- documentation
+- template kit
+- release artifact
+
+Do not assume a standard open source software model unless the project clearly justifies it.
+
+Stop and ask if classification remains materially ambiguous.
+
+PHASE 2 - Analyze the workspace
+
+Inspect the workspace enough to make sound publication decisions.
+
+Determine and report:
+
+- high-level structure
+- stack or tooling, if any
+- entry points
+- generated outputs already present
+- environment-variable usage
+- whether `.env.example` exists
+- GitHub-relevant files already present
+- licensing signals already present
+- deployment signals already present
+- whether the workspace is already a git repository
+- whether remotes already exist
+- whether any Pages, docs, or site surfaces already exist
+
+Do not generate files in this phase.
+
+Do not force a full read of every file if unnecessary. Read enough to close the publication decision perimeter.
+
+PHASE 3 - Run the publication risk audit
+
+Check and report:
+
+- sensitive data in current files
+- sensitive data in git history, if git history exists
+- secrets, tokens, credentials, private keys, or personal data
+- local-only or generated material that should not be published
+- tracked artifacts such as:
+  - build output
+  - caches
+  - installed dependencies
+  - editor folders
+  - temp files
+  - backups
+- large binary or media files that may need exclusion or LFS
+- third-party assets or bundled material that may create license or attribution obligations
+- commit hygiene, if history exists
+- compatibility between intended license and:
+  - dependencies
+  - bundled assets
+  - third-party content
+- naming risks for public publication
+- deployment risks
+- any anomaly that should block publication
+
+If the workspace is not yet a git repository, explicitly state that history audit cannot be performed and continue with current-file audit only.
+
+If publication-blocking issues are found, stop and provide remediation steps before continuing.
+
+PHASE 4 - Design the publication model
+
+Before generating any file, decide and report:
+
+- recommended repository visibility
+- recommended license
+- whether GitHub Pages is appropriate
+- if GitHub Pages is appropriate:
+  - whether it should exist now or later
+  - where its source should live
+  - whether it should be isolated from the main project surface
+- which GitHub features should be enabled or disabled:
+  - Issues
+  - Discussions
+  - Wiki
+  - Projects
+  - Actions
+  - Releases
+- whether CI is justified
+- whether community-health files are justified
+- whether documentation beyond the README is justified
+- whether language statistics need protection through `.gitattributes`
+- whether `.nojekyll`, LFS, deployment workflows, release assets, or similar mechanisms are justified
+
+Rules:
+
+- do not generate GitHub Pages by default
+- do not generate CI by default
+- do not generate community files by default
+- do not generate docs by default
+- only add them when the real project and publication model justify them
+
+Prefer the smallest correct publication package.
+
+PHASE 5 - Generate the publication package
+
+Generate only the files justified by the publication model.
+
+Possible files include:
+
+- `.gitignore`
+- `.gitattributes`
+- `.env.example`
+- `LICENSE`
+- `README.md`
+- `CONTRIBUTING.md`
+- `CHANGELOG.md`
+- `CODE_OF_CONDUCT.md`
+- `SECURITY.md`
+- `CODEOWNERS`
+- `.github/ISSUE_TEMPLATE/`
+- `.github/PULL_REQUEST_TEMPLATE.md`
+- `.github/workflows/`
+- `docs/`
+- static site files for GitHub Pages
+
+Generation rules:
+
+- infer from the actual workspace and project intent
+- extend existing files when appropriate instead of replacing them
+- do not generate placeholder bureaucracy
+- do not create files only because they are common on GitHub
+- if a file is skipped, state why
+- if a file requires unresolved policy input, stop and ask before generating it
+
+Generate a coherent publication package.  
+Do not request unnecessary confirmation after every single file unless the user explicitly wants step-by-step approval.
+
+PHASE 6 - Review before any git or GitHub action
+
+Before initializing git, creating commits, creating a remote repository, or pushing, produce a concise review that states:
+
+- what will be published
+- what will not be published
+- which files were added or modified for publication
+- which repository features are expected to be enabled or disabled
+- which decisions are now frozen
+- which decisions still require confirmation
+- which risks remain
+
+Do not initialize git, commit, create a remote, or push until this review is complete and the publication package is confirmed.
+
+PHASE 7 - Execute publication
+
+After confirmation, perform the minimum clean publication sequence required by the environment.
+
+Possible actions include:
+
+- initialize git if absent
+- set the default branch name
+- stage files intentionally
+- create the first commit
+- create the remote repository
+- connect the remote
+- push the default branch
+- configure Pages
+- set description and homepage
+- configure repository features if automation is available
+
+Do not assume publication means only pushing files.  
+Publication also includes repository identity, licensing clarity, feature surface, and deployment behavior.
+
+PHASE 8 - Final post-publication checklist
+
+After publication, produce a checklist containing only the relevant remaining manual tasks.
+
+Possible items include:
+
+- verify repository visibility
+- verify README rendering
+- verify license recognition
+- verify Pages deployment
+- set description and topics
+- set homepage URL
+- verify Actions permissions
+- configure branch protection if needed
+- create a first release or tag if appropriate
+- verify community files and templates
+- confirm that no unintended files became public
+
+Final safeguards
+
+- Never assume every repository is open source software.
+- Never assume every public repository needs all standard GitHub files.
+- Never assume GitHub Pages belongs in the main branch.
+- Never assume CI is useful if there is no meaningful build or test surface.
+- Never optimize for maximum file count.
+- Always optimize for a clean, justified, publication-ready result.
