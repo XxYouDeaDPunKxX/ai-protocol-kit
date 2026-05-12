@@ -1,0 +1,106 @@
+# ai-protocol-kit
+
+URL: https://xxyoudeadpunkxx.github.io/ai-protocol-kit/
+GitHub: https://github.com/XxYouDeaDPunKxX/ai-protocol-kit
+License: CC-BY-SA-4.0
+
+## What this is
+
+ai-protocol-kit is a public index and guided discovery page for AI behavior contracts and operational protocols used in practical AI-assisted work.
+
+The page has a four-step guide that starts from the work in front of the user and returns useful protocol paths without forcing a single answer.
+
+## How to use
+
+Pick a protocol, give it to the AI before execution, state the task and constraints, and let the protocol guide questions, assumptions, review, and output.
+
+## Protocols
+
+### GitHub Pages Discovery Set Protocol
+Group: GitHub / Pages
+Category: GitHub Pages discovery
+Use when: Use when a GitHub Pages page or site needs correct canonical URLs, discovery files, sitemap, robots handling, and low-noise machine-readable links.
+URL: https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/github-pages-discovery-set-protocol-v1.md
+
+### GitHub Repository Publication Preparation Protocol
+Group: GitHub / Pages
+Category: Repository publication
+Use when: Use when a repository needs a publication audit before visibility changes, Pages setup, commits, remotes, packaging, or push.
+URL: https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/github-repository-publication-preparation-protocol-v2.md
+
+### GitHub README Framing and Authoring Protocol
+Group: Writing
+Category: Repository README
+Use when: Use when a README needs to explain the real project, fit the reader, and avoid generic templates or claims not supported by the repository.
+URL: https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/github-readme-framing-authoring-protocol-v2.md
+
+### Public Page Publication Protocol
+Group: Publication
+Category: Public page readiness
+Use when: Use when a public page, landing page, showcase, portfolio entry, documentation entrypoint, or GitHub Pages page needs role, audience, structure, metadata, links, and publication risks checked before release.
+URL: https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/public-page-publication-protocol-v2.md
+
+### Idea Shaping Protocol
+Group: Shaping
+Category: Idea shaping
+Use when: Use when the idea is still vague, mixed, or unstable and needs shape before execution.
+URL: https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/idea-shaping-protocol-v1.md
+
+### HTML Page & Tool Briefing Protocol
+Group: HTML / Web
+Category: HTML implementation brief
+Use when: Use when an AI needs to build an HTML page or tool from a closed brief with structure, copy, DOM order, responsive behavior, data schema, and implementation rails.
+URL: https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/html-page-and-tool-briefing-protocol-v2.md
+
+### Field Findings & Bugs Protocol
+Group: Review
+Category: Findings and bugs
+Use when: Use when a review produces multiple findings and they need to stay structured instead of becoming noisy notes.
+URL: https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/field-findings-and-bugs-protocol-v2.md
+
+### HTML and Website Discovery Set Protocol
+Group: HTML / Web
+Category: Website discovery
+Use when: Use when a static site needs metadata, canonical URLs, sitemap, robots rules, llms.txt, raw manifest, and footer machine links.
+URL: https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/html-and-website-discovery-set-protocol-v1-2.md
+
+### PHI-Lens Protocol
+Group: Shaping
+Category: Constraint conflict resolution
+Use when: Use when the work has competing pressures and needs one priority to lead without ignoring the other constraints.
+URL: https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/phi-lens-protocol-v4-a.md
+
+### Pre-Task Expansion Protocol
+Group: Shaping
+Category: Pre-task expansion
+Use when: Use when the task needs alternative readings, surrounding context, grouped tensions, and a better problem shape before execution.
+URL: https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/pre-task-expansion-protocol-v1.md
+
+### Output for Real Readers Protocol
+Group: Writing
+Category: Reader-facing output
+Use when: Use when guides, README text, emails, instructions, pages, forms, or other reader-facing material need purpose, tone, reader fit, and plain language closed before writing.
+URL: https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/output-for-real-readers-protocol-v2.md
+
+### Structural Shaping Protocol
+Group: Shaping
+Category: Operational structure
+Use when: Use when material is ambiguous and needs clearer boundaries, evidence, uncertainty, and final direction before producing output.
+URL: https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/structural-shaping-protocol-v1.md
+
+### System Reading Protocol
+Group: System Reading
+Category: System interpretation
+Use when: Use when a system, workflow, project, or behavior needs to be understood before anyone jumps into solutions.
+URL: https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/system-reading-protocol-v0-2.md
+
+### Triad AI Orchestration Protocol
+Group: Orchestration
+Category: Multi-AI review loop
+Use when: Use when Codex, ChatGPT, repo snapshots, pushed diffs, files, or review findings need a controlled loop across tools.
+URL: https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/triad-ai-orchestration-protocol-v3.md
+
+## Machine-readable files
+
+- https://xxyoudeadpunkxx.github.io/ai-protocol-kit/raw-manifest.json
+- https://xxyoudeadpunkxx.github.io/ai-protocol-kit/sitemap.xml
