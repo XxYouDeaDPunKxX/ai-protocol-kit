@@ -50,13 +50,13 @@ They also do not override higher-priority instructions. Safety, legality, privac
 
 Active working kit. Protocols may evolve as they are tested in real workflows.
 
-## 🧬 Developed with AI
+## 🤖 AI-assisted development
 
-This repository is developed through AI-assisted work.
+This project was developed with AI assistance.
 
-The protocols are shaped, tested, reviewed, and revised in real sessions with AI tools.
+The project, documentation, and repository materials were shaped through human-directed work supported by AI tools during drafting, structuring, review, and refinement.
 
-Human direction and final choices stay with the operator.
+AI assistance does not make the project automatically correct, complete, or suitable for every use case. Read it, test it, and adapt it to your own context.
 
 ## 🏷️ License
 
