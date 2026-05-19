@@ -1612,10 +1612,6 @@ window.APK_PICKER_DATA = {
     }
   ],
   "scoring": {
-    "primary": 3,
-    "secondary": 1,
-    "avoid": -4,
-    "weakThreshold": 3.2,
     "tieMargin": 1.6,
     "choicePrimary": 2.0,
     "choiceSecondary": 0.75,
@@ -1632,8 +1628,7 @@ window.APK_PICKER_DATA = {
     "dealContextBonus": 1.6
   },
   "uiCopy": {
-    "emptyResult": "Choose a few signals above. The path will appear here.",
-    "partialResult": "Keep selecting, or inspect the possible path forming here.",
+    "emptyResult": "Start with one signal in the first row. Add friction only if it changes the path.",
     "noMatch": "This kit may not cover the whole job. Use the closest protocol only for the part it actually covers."
   }
 };

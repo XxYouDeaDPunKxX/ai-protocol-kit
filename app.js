@@ -89,12 +89,12 @@
     if (!stepsEl) return;
 
     stepsEl.innerHTML = (data.steps || []).map((step, index) => `
-      <section class="step-row">
+      <section class="step-row" aria-labelledby="step-title-${escapeHtml(step.id)}">
         <div class="step-number">${index + 1}</div>
         <div class="step-title">
-          <h3>${escapeHtml(step.title)}</h3>
+          <h3 id="step-title-${escapeHtml(step.id)}">${escapeHtml(step.title)}</h3>
         </div>
-        <div class="choice-grid">
+        <div class="choice-grid" role="group" aria-labelledby="step-title-${escapeHtml(step.id)}">
           ${(step.choices || []).map((choice) => `
             <button
               class="choice-button"
@@ -211,8 +211,8 @@
   function actionSet(protocol, primaryLabel = "Open") {
     return `
       <a class="btn btn-primary" href="${escapeHtml(protocol.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(primaryLabel)}</a>
-      <button class="btn" type="button" data-copy-protocol="${escapeHtml(protocol.id)}">Copy protocol</button>
-      <button class="btn" type="button" data-copy-instructions="${escapeHtml(protocol.id)}">Copy instructions</button>
+      <button class="btn btn-copy-protocol" type="button" data-copy-protocol="${escapeHtml(protocol.id)}">Copy protocol</button>
+      <button class="btn btn-copy-instructions" type="button" data-copy-instructions="${escapeHtml(protocol.id)}">Copy instructions</button>
     `;
   }
 
@@ -322,17 +322,19 @@
           <span>${escapeHtml(protocol.category)}</span>
         </div>
         <div class="row-main">
+          <p class="match-label">Matches current path</p>
           <h3 class="row-title">${escapeHtml(protocol.title)}</h3>
           <p class="row-desc">${escapeHtml(protocol.shortDescription)}</p>
         </div>
         <div class="row-actions">
-          <a class="btn btn-primary btn-small" href="${escapeHtml(protocol.url)}" target="_blank" rel="noopener noreferrer">Open</a>
+          <button class="btn btn-primary btn-small" type="button" data-toggle-details="${escapeHtml(protocol.id)}">Details</button>
+          <a class="btn btn-small" href="${escapeHtml(protocol.url)}" target="_blank" rel="noopener noreferrer">Open</a>
         </div>
         <details class="row-details">
           <summary><span class="closed-label">Show details</span><span class="open-label">Hide details</span></summary>
           <div class="detail-actions">
-            <button class="btn btn-small" type="button" data-copy-protocol="${escapeHtml(protocol.id)}">Copy protocol</button>
-            <button class="btn btn-small" type="button" data-copy-instructions="${escapeHtml(protocol.id)}">Copy instructions</button>
+            <button class="btn btn-small btn-copy-protocol" type="button" data-copy-protocol="${escapeHtml(protocol.id)}">Copy protocol</button>
+            <button class="btn btn-small btn-copy-instructions" type="button" data-copy-instructions="${escapeHtml(protocol.id)}">Copy instructions</button>
           </div>
           <div class="detail-grid">
             ${detailBlock("best", "Best for", protocol.bestFor || [])}
@@ -426,6 +428,14 @@
     const copyInstructionsButton = target.closest("[data-copy-instructions]");
     if (copyInstructionsButton) {
       copyInstructions(copyInstructionsButton.dataset.copyInstructions);
+      return;
+    }
+
+    const detailsButton = target.closest("[data-toggle-details]");
+    if (detailsButton) {
+      const row = detailsButton.closest(".protocol-row");
+      const details = row?.querySelector(".row-details");
+      if (details) details.open = !details.open;
     }
   });
 
