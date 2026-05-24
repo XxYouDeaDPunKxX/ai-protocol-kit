@@ -346,16 +346,16 @@ If a protocol changes on `main`, update the public page data and discovery files
 
 </details>
 
-## 🧑‍💻 AI-Assisted Work
+## 🤖 AI-assisted development
 
-This page was built through iterative work with AI assistance.
+This project was developed with AI assistance.
 
-The concept, direction, review, corrections, and final decisions were human-led. AI was used for drafting, code edits, refactoring, debugging, and documentation support.
+The project, documentation, and repository materials were shaped through human-directed work supported by AI tools during drafting, structuring, review, and refinement.
 
-## ⚖️ License
+AI assistance does not make the project automatically correct, complete, or suitable for every use case. Read it, test it, and adapt it to your own context.
 
-This branch is licensed under Creative Commons Attribution-ShareAlike 4.0 International.
+## 📜 License
 
-SPDX: `CC-BY-SA-4.0`
+This project is licensed under `CC BY-SA 4.0` (`Creative Commons Attribution-ShareAlike 4.0 International`).
 
-See [LICENSE](LICENSE).
+See [`LICENSE`](LICENSE).
