@@ -60,6 +60,15 @@
       "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/github-readme-framing-authoring-protocol-v2.md"
     },
     {
+      "id": "gpt-agentic-posture-contract",
+      "title": "GPT Agentic Posture Contract",
+      "group": "Orchestration",
+      "category": "Agentic execution posture",
+      "description": "Make ChatGPT work more like Codex: tool-aware, grounded in real files, and strict about verification.",
+      "use_when": "Use when ChatGPT needs to act as a Codex-like working agent: operate on real files and artifacts, use Canvas as an execution ledger, verify before claiming, respect repository boundaries, and stop when the task is not ready to proceed.",
+      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/gpt-agentic-posture-contract.md"
+    },
+    {
       "id": "public-page-publication-protocol-v2",
       "title": "Public Page Publication Protocol",
       "group": "Publication",

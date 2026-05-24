@@ -40,6 +40,12 @@ Category: Repository README
 Use when: Use when a README needs to explain the real project, fit the reader, and avoid generic templates or claims not supported by the repository.
 URL: https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/github-readme-framing-authoring-protocol-v2.md
 
+### GPT Agentic Posture Contract
+Group: Orchestration
+Category: Agentic execution posture
+Use when: Use when ChatGPT needs to act as a Codex-like working agent: operate on real files and artifacts, use Canvas as an execution ledger, verify before claiming, respect repository boundaries, and stop when the task is not ready to proceed.
+URL: https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/gpt-agentic-posture-contract.md
+
 ### Public Page Publication Protocol
 Group: Publication
 Category: Public page readiness

@@ -700,6 +700,139 @@ window.APK_PICKER_DATA = {
       ]
     },
     {
+      "id": "gpt-agentic-posture-contract",
+      "title": "GPT Agentic Posture Contract",
+      "path": "protocols/gpt-agentic-posture-contract.md",
+      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/gpt-agentic-posture-contract.md",
+      "rawUrl": "https://raw.githubusercontent.com/XxYouDeaDPunKxX/ai-protocol-kit/main/protocols/gpt-agentic-posture-contract.md",
+      "group": "Orchestration",
+      "category": "Agentic execution posture",
+      "shortDescription": "Make ChatGPT work more like Codex: tool-aware, grounded in real files, and strict about verification.",
+      "useWhen": "Use when ChatGPT needs to act as a Codex-like working agent: operate on real files and artifacts, use Canvas as an execution ledger, verify before claiming, respect repository boundaries, and stop when the task is not ready to proceed.",
+      "bestFor": [
+        "Codex-like ChatGPT sessions",
+        "tool-mediated work",
+        "repository and artifact work",
+        "multi-step execution",
+        "Canvas execution ledger use"
+      ],
+      "notFor": [
+        "simple one-shot answers",
+        "pure writing tasks",
+        "metadata-only publication checks",
+        "static page discovery by itself"
+      ],
+      "needs": [
+        "task boundary",
+        "available tools or MCPs",
+        "real files or artifacts when involved",
+        "Canvas execution ledger for long or systemic work",
+        "repository state when repository work is involved"
+      ],
+      "outputMode": "Codex-like operating posture with verified state, tool use, execution ledger updates, and explicit stop conditions.",
+      "searchKeywords": [
+        "Codex-like",
+        "ChatGPT agent",
+        "agentic posture",
+        "tool-aware",
+        "MCP",
+        "Canvas",
+        "execution ledger",
+        "real files",
+        "artifacts",
+        "repository boundaries",
+        "verification",
+        "stateful session",
+        "write safety",
+        "workflow control"
+      ],
+      "primaryTags": [
+        "agentic-posture",
+        "codex-like",
+        "tool-aware",
+        "real-objects",
+        "execution-ledger"
+      ],
+      "secondaryTags": [
+        "session",
+        "workflow",
+        "controlled-loop",
+        "verify",
+        "evidence",
+        "repository",
+        "repo-state",
+        "files",
+        "artifacts",
+        "drift",
+        "continuity",
+        "many-moving-parts",
+        "complex",
+        "boundaries",
+        "next-move",
+        "operational",
+        "inspectable",
+        "trust-gap",
+        "canvas-ledger",
+        "grounded-execution",
+        "write-safety",
+        "runtime-state",
+        "artifact-work",
+        "multi-step",
+        "coordination"
+      ],
+      "avoidTags": [
+        "pure-writing",
+        "reader-facing",
+        "static-page-only",
+        "metadata-only",
+        "simple-task",
+        "final-output-only",
+        "review-needed",
+        "weak-points",
+        "findings",
+        "bugs",
+        "idea",
+        "early-stage",
+        "no-start",
+        "public-surface",
+        "website",
+        "page"
+      ],
+      "companions": [
+        "triad-ai-orchestration-protocol-v3",
+        "github-repository-publication-preparation-protocol-v2",
+        "field-findings-and-bugs-protocol-v2",
+        "pre-task-expansion-protocol-v1"
+      ],
+      "order": 5,
+      "contextRequired": true,
+      "contextTags": [
+        "session",
+        "workflow",
+        "repository",
+        "repo-state",
+        "files",
+        "artifacts",
+        "tool-aware",
+        "runtime-state",
+        "execution-ledger",
+        "canvas-ledger",
+        "drift",
+        "continuity",
+        "controlled-loop"
+      ],
+      "intentTags": [
+        "controlled-loop",
+        "verify",
+        "inspectable",
+        "next-move",
+        "grounded-execution",
+        "codex-like",
+        "write-safety",
+        "boundaries"
+      ]
+    },
+    {
       "id": "public-page-publication-protocol-v2",
       "title": "Public Page Publication Protocol",
       "path": "protocols/public-page-publication-protocol-v2.md",
@@ -775,7 +908,7 @@ window.APK_PICKER_DATA = {
         "html-page-and-tool-briefing-protocol-v2",
         "output-for-real-readers-protocol-v2"
       ],
-      "order": 5,
+      "order": 6,
       "contextRequired": false,
       "contextTags": [
         "page",
@@ -857,7 +990,7 @@ window.APK_PICKER_DATA = {
         "structural-shaping-protocol-v1",
         "system-reading-protocol-v0-2"
       ],
-      "order": 6,
+      "order": 7,
       "contextRequired": false,
       "contextTags": [
         "idea",
@@ -948,7 +1081,7 @@ window.APK_PICKER_DATA = {
         "html-and-website-discovery-set-protocol-v1-2",
         "output-for-real-readers-protocol-v2"
       ],
-      "order": 7,
+      "order": 8,
       "contextRequired": false,
       "contextTags": [
         "html",
@@ -1047,7 +1180,7 @@ window.APK_PICKER_DATA = {
         "phi-lens-protocol-v4-a",
         "structural-shaping-protocol-v1"
       ],
-      "order": 8,
+      "order": 9,
       "contextRequired": false,
       "contextTags": [
         "review",
@@ -1134,7 +1267,7 @@ window.APK_PICKER_DATA = {
         "public-page-publication-protocol-v2",
         "html-page-and-tool-briefing-protocol-v2"
       ],
-      "order": 9,
+      "order": 10,
       "contextRequired": false,
       "contextTags": [
         "website",
@@ -1229,7 +1362,7 @@ window.APK_PICKER_DATA = {
         "structural-shaping-protocol-v1",
         "field-findings-and-bugs-protocol-v2"
       ],
-      "order": 10,
+      "order": 11,
       "contextRequired": false,
       "contextTags": [
         "constraints",
@@ -1312,7 +1445,7 @@ window.APK_PICKER_DATA = {
         "structural-shaping-protocol-v1",
         "phi-lens-protocol-v4-a"
       ],
-      "order": 11,
+      "order": 12,
       "contextRequired": false,
       "contextTags": [
         "no-start",
@@ -1402,7 +1535,7 @@ window.APK_PICKER_DATA = {
         "public-page-publication-protocol-v2",
         "html-page-and-tool-briefing-protocol-v2"
       ],
-      "order": 12,
+      "order": 13,
       "contextRequired": false,
       "contextTags": [
         "text",
@@ -1494,7 +1627,7 @@ window.APK_PICKER_DATA = {
         "pre-task-expansion-protocol-v1",
         "system-reading-protocol-v0-2"
       ],
-      "order": 13,
+      "order": 14,
       "contextRequired": false,
       "contextTags": [
         "ambiguous",
@@ -1578,7 +1711,7 @@ window.APK_PICKER_DATA = {
         "idea-shaping-protocol-v1",
         "phi-lens-protocol-v4-a"
       ],
-      "order": 14,
+      "order": 15,
       "contextRequired": false,
       "contextTags": [
         "system",
@@ -1679,7 +1812,7 @@ window.APK_PICKER_DATA = {
         "github-repository-publication-preparation-protocol-v2",
         "structural-shaping-protocol-v1"
       ],
-      "order": 15,
+      "order": 16,
       "contextRequired": true,
       "contextTags": [
         "session",
@@ -1711,7 +1844,7 @@ window.APK_PICKER_DATA = {
     "choiceAvoid": -3.5,
     "stepWeights": {
       "deal": 0.75,
-      "off": 1.0,
+      "off": 1,
       "want": 1.45
     },
     "intentBonus": 1.2,
