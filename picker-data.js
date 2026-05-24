@@ -11,7 +11,7 @@ window.APK_PICKER_DATA = {
     "Writing",
     "Review",
     "Publication",
-    "GitHub / Pages",
+    "GitHub / Pages & Repo",
     "HTML / Web",
     "Orchestration",
     "System Reading"
@@ -342,7 +342,7 @@ window.APK_PICKER_DATA = {
       "path": "protocols/github-pages-discovery-set-protocol-v1.md",
       "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/github-pages-discovery-set-protocol-v1.md",
       "rawUrl": "https://raw.githubusercontent.com/XxYouDeaDPunKxX/ai-protocol-kit/main/protocols/github-pages-discovery-set-protocol-v1.md",
-      "group": "GitHub / Pages",
+      "group": "GitHub / Pages & Repo",
       "category": "GitHub Pages discovery",
       "shortDescription": "Prepare the machine-readable layer for a GitHub Pages site without breaking Pages path rules.",
       "useWhen": "Use when a GitHub Pages page or site needs correct canonical URLs, discovery files, sitemap, robots handling, and low-noise machine-readable links.",
@@ -436,7 +436,7 @@ window.APK_PICKER_DATA = {
       "path": "protocols/github-repository-publication-preparation-protocol-v2.md",
       "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/github-repository-publication-preparation-protocol-v2.md",
       "rawUrl": "https://raw.githubusercontent.com/XxYouDeaDPunKxX/ai-protocol-kit/main/protocols/github-repository-publication-preparation-protocol-v2.md",
-      "group": "GitHub / Pages",
+      "group": "GitHub / Pages & Repo",
       "category": "Repository publication",
       "shortDescription": "Prepare a repository before making it public or presenting it as clean GitHub work.",
       "useWhen": "Use when a repository needs a publication audit before visibility changes, Pages setup, commits, remotes, packaging, or push.",
@@ -520,6 +520,99 @@ window.APK_PICKER_DATA = {
       ]
     },
     {
+      "id": "github-badge-telemetry-counter-protocol-v1-2-3",
+      "title": "GitHub Badge, Telemetry & Counter Protocol",
+      "path": "protocols/github-badge-telemetry-counter-protocol-v1-2-3.md",
+      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/github-badge-telemetry-counter-protocol-v1-2-3.md",
+      "rawUrl": "https://raw.githubusercontent.com/XxYouDeaDPunKxX/ai-protocol-kit/main/protocols/github-badge-telemetry-counter-protocol-v1-2-3.md",
+      "group": "GitHub / Pages & Repo",
+      "category": "Badges, counters, and repo signals",
+      "shortDescription": "Choose useful badges, counters, analytics, and checks without adding vanity numbers.",
+      "useWhen": "Use when a repo or GitHub Page might need badges, counters, analytics, traffic review, or validation checks, and you want to know what is actually worth adding.",
+      "bestFor": [
+        "GitHub repo badges",
+        "README counters",
+        "Page analytics",
+        "traffic review",
+        "validation checks"
+      ],
+      "notFor": [
+        "publishing a repository from scratch",
+        "creating discovery files",
+        "choosing a license or release strategy"
+      ],
+      "needs": [
+        "current repo or Page state",
+        "existing badges or counters",
+        "existing workflows or scripts",
+        "Page URL if analytics are involved",
+        "what decision the signal should help"
+      ],
+      "outputMode": "Signal decisions: add, skip, defer, block, or clean up existing badges and counters.",
+      "searchKeywords": [
+        "badge",
+        "badges",
+        "counter",
+        "counters",
+        "analytics",
+        "telemetry",
+        "traffic",
+        "GitHub Traffic",
+        "workflow badge",
+        "validation check",
+        "vanity metrics",
+        "README counter",
+        "Page analytics"
+      ],
+      "primaryTags": [
+        "repository",
+        "github",
+        "trust-gap",
+        "verify",
+        "inspectable",
+        "repo-state"
+      ],
+      "secondaryTags": [
+        "page",
+        "github-pages",
+        "public",
+        "public-surface",
+        "fragile",
+        "harden",
+        "metrics",
+        "workflow",
+        "evidence",
+        "cleanup",
+        "publishable"
+      ],
+      "avoidTags": [
+        "non-repository",
+        "pure-writing",
+        "idea-only"
+      ],
+      "companions": [
+        "github-repository-publication-preparation-protocol-v2",
+        "github-pages-discovery-set-protocol-v1",
+        "github-readme-framing-authoring-protocol-v2"
+      ],
+      "order": 3,
+      "contextRequired": true,
+      "contextTags": [
+        "repository",
+        "github",
+        "repo-state",
+        "github-pages",
+        "page"
+      ],
+      "intentTags": [
+        "inspectable",
+        "verify",
+        "trust-gap",
+        "cleanup",
+        "publishable"
+      ]
+    },
+    {
       "id": "github-readme-framing-authoring-protocol-v2",
       "title": "GitHub README Framing and Authoring Protocol",
       "path": "protocols/github-readme-framing-authoring-protocol-v2.md",
@@ -589,7 +682,7 @@ window.APK_PICKER_DATA = {
         "github-repository-publication-preparation-protocol-v2",
         "structural-shaping-protocol-v1"
       ],
-      "order": 3,
+      "order": 4,
       "contextRequired": true,
       "contextTags": [
         "repository",
@@ -682,7 +775,7 @@ window.APK_PICKER_DATA = {
         "html-page-and-tool-briefing-protocol-v2",
         "output-for-real-readers-protocol-v2"
       ],
-      "order": 4,
+      "order": 5,
       "contextRequired": false,
       "contextTags": [
         "page",
@@ -764,7 +857,7 @@ window.APK_PICKER_DATA = {
         "structural-shaping-protocol-v1",
         "system-reading-protocol-v0-2"
       ],
-      "order": 5,
+      "order": 6,
       "contextRequired": false,
       "contextTags": [
         "idea",
@@ -855,7 +948,7 @@ window.APK_PICKER_DATA = {
         "html-and-website-discovery-set-protocol-v1-2",
         "output-for-real-readers-protocol-v2"
       ],
-      "order": 6,
+      "order": 7,
       "contextRequired": false,
       "contextTags": [
         "html",
@@ -954,7 +1047,7 @@ window.APK_PICKER_DATA = {
         "phi-lens-protocol-v4-a",
         "structural-shaping-protocol-v1"
       ],
-      "order": 7,
+      "order": 8,
       "contextRequired": false,
       "contextTags": [
         "review",
@@ -1041,7 +1134,7 @@ window.APK_PICKER_DATA = {
         "public-page-publication-protocol-v2",
         "html-page-and-tool-briefing-protocol-v2"
       ],
-      "order": 8,
+      "order": 9,
       "contextRequired": false,
       "contextTags": [
         "website",
@@ -1136,7 +1229,7 @@ window.APK_PICKER_DATA = {
         "structural-shaping-protocol-v1",
         "field-findings-and-bugs-protocol-v2"
       ],
-      "order": 9,
+      "order": 10,
       "contextRequired": false,
       "contextTags": [
         "constraints",
@@ -1219,7 +1312,7 @@ window.APK_PICKER_DATA = {
         "structural-shaping-protocol-v1",
         "phi-lens-protocol-v4-a"
       ],
-      "order": 10,
+      "order": 11,
       "contextRequired": false,
       "contextTags": [
         "no-start",
@@ -1309,7 +1402,7 @@ window.APK_PICKER_DATA = {
         "public-page-publication-protocol-v2",
         "html-page-and-tool-briefing-protocol-v2"
       ],
-      "order": 11,
+      "order": 12,
       "contextRequired": false,
       "contextTags": [
         "text",
@@ -1401,7 +1494,7 @@ window.APK_PICKER_DATA = {
         "pre-task-expansion-protocol-v1",
         "system-reading-protocol-v0-2"
       ],
-      "order": 12,
+      "order": 13,
       "contextRequired": false,
       "contextTags": [
         "ambiguous",
@@ -1485,7 +1578,7 @@ window.APK_PICKER_DATA = {
         "idea-shaping-protocol-v1",
         "phi-lens-protocol-v4-a"
       ],
-      "order": 13,
+      "order": 14,
       "contextRequired": false,
       "contextTags": [
         "system",
@@ -1586,7 +1679,7 @@ window.APK_PICKER_DATA = {
         "github-repository-publication-preparation-protocol-v2",
         "structural-shaping-protocol-v1"
       ],
-      "order": 14,
+      "order": 15,
       "contextRequired": true,
       "contextTags": [
         "session",

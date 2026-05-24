@@ -26,7 +26,7 @@
     {
       "id": "github-pages-discovery-set-protocol-v1",
       "title": "GitHub Pages Discovery Set Protocol",
-      "group": "GitHub / Pages",
+      "group": "GitHub / Pages & Repo",
       "category": "GitHub Pages discovery",
       "description": "Prepare the machine-readable layer for a GitHub Pages site without breaking Pages path rules.",
       "use_when": "Use when a GitHub Pages page or site needs correct canonical URLs, discovery files, sitemap, robots handling, and low-noise machine-readable links.",
@@ -35,11 +35,20 @@
     {
       "id": "github-repository-publication-preparation-protocol-v2",
       "title": "GitHub Repository Publication Preparation Protocol",
-      "group": "GitHub / Pages",
+      "group": "GitHub / Pages & Repo",
       "category": "Repository publication",
       "description": "Prepare a repository before making it public or presenting it as clean GitHub work.",
       "use_when": "Use when a repository needs a publication audit before visibility changes, Pages setup, commits, remotes, packaging, or push.",
       "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/github-repository-publication-preparation-protocol-v2.md"
+    },
+    {
+      "id": "github-badge-telemetry-counter-protocol-v1-2-3",
+      "title": "GitHub Badge, Telemetry & Counter Protocol",
+      "group": "GitHub / Pages & Repo",
+      "category": "Badges, counters, and repo signals",
+      "description": "Choose useful badges, counters, analytics, and checks without adding vanity numbers.",
+      "use_when": "Use when a repo or GitHub Page might need badges, counters, analytics, traffic review, or validation checks, and you want to know what is actually worth adding.",
+      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/github-badge-telemetry-counter-protocol-v1-2-3.md"
     },
     {
       "id": "github-readme-framing-authoring-protocol-v2",

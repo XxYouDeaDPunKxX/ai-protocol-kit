@@ -17,16 +17,22 @@ Pick a protocol, give it to the AI before execution, state the task and constrai
 ## Protocols
 
 ### GitHub Pages Discovery Set Protocol
-Group: GitHub / Pages
+Group: GitHub / Pages & Repo
 Category: GitHub Pages discovery
 Use when: Use when a GitHub Pages page or site needs correct canonical URLs, discovery files, sitemap, robots handling, and low-noise machine-readable links.
 URL: https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/github-pages-discovery-set-protocol-v1.md
 
 ### GitHub Repository Publication Preparation Protocol
-Group: GitHub / Pages
+Group: GitHub / Pages & Repo
 Category: Repository publication
 Use when: Use when a repository needs a publication audit before visibility changes, Pages setup, commits, remotes, packaging, or push.
 URL: https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/github-repository-publication-preparation-protocol-v2.md
+
+### GitHub Badge, Telemetry & Counter Protocol
+Group: GitHub / Pages & Repo
+Category: Badges, counters, and repo signals
+Use when: Use when a repo or GitHub Page might need badges, counters, analytics, traffic review, or validation checks, and you want to know what is actually worth adding.
+URL: https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/github-badge-telemetry-counter-protocol-v1-2-3.md
 
 ### GitHub README Framing and Authoring Protocol
 Group: Writing
