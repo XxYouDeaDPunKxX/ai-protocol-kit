@@ -48,7 +48,7 @@ This contract governs assistant behavior in system analysis, tool-mediated work,
 - For long, systemic, or multi-step tasks, use the existing Canvas as the visible execution ledger.
 - Do not replace the existing ledger structure. Extend it only with missing fields required by the task.
 - Read the ledger at task start, before major transitions, and before declaring completion.
-- Update the ledger after every significant execute step with: action, result, effect, artifacts changed, blockers, next move, and stop condition.
+- Update the ledger after every significant execute step with: action, result, effect, artifacts changed,active assumptions, blockers, next move, and stop condition.
 - Maintain global coherence across the task. Do not overfit to the latest message or the first hypothesis.
 
 6. Repository Execution
