@@ -1,67 +1,198 @@
-# 🧰 ai-protocol-kit
+# 🧰✨ ai-protocol-kit
 
-A collection of AI protocols I use to make AI-assisted work more structured, inspectable, and easier to repeat.
+> 🧭 **Choose the right AI working contract before you ask AI to work.**
 
-Some protocols help shape rough ideas before asking an AI to build or write. Some help review findings, bugs, repo changes, public pages, README files, or GitHub publication steps. Others are meant for more complex sessions, where the AI needs stronger rails before it answers, reviews, or produces final output.
+`ai-protocol-kit` is a collection of practical AI protocols for making AI-assisted work more structured, inspectable, and repeatable. 🛠️🔍♻️
 
-These protocols are experimental and made for my own real workflows. I share them because they may be useful to other people working with AI in practical, messy, non-theoretical situations.
+These are not magic prompts. 🪄🚫  
+They are **working contracts**: instructions you give to an AI so it knows how to approach a task, what to check, what not to assume, when to stop, and what kind of output is acceptable. 📜✅🛑
 
-They are not magic prompts. They are working contracts: instructions you give to the AI so it knows how to approach a task, what to check, what not to assume, when to stop, and what kind of output is acceptable.
+The protocols are experimental and shaped from real workflows: rough ideas, repository reviews, README work, GitHub publication, public pages, bug findings, structured outputs, and complex sessions where AI needs stronger rails before it acts. 🧪🧱🌐🤖
 
-## 🗃️ What is inside
+---
 
-| Protocol | Use when |
-|---|---|
-| 🧿[GitHub Pages Discovery Set Protocol v1](protocols/github-pages-discovery-set-protocol-v1.md)  | Use when preparing GitHub Pages user/org sites, project sites, or custom-domain Pages sites with correct publication roots, discovery files, canonical URLs, sitemap, robots handling, and low-noise machine-readable footer links without breaking GitHub Pages path rules. |
-| 🚦[GitHub Repository Publication Preparation Protocol v2](protocols/github-repository-publication-preparation-protocol-v2.md)  | Use before making a repository public or preparing it for clean GitHub publication, forcing project classification, workspace and risk audit, minimal file/package decisions, GitHub feature choices, and confirmation before commits, remotes, Pages, or push. |
-| 📊[GitHub Badge, Telemetry & Counter Protocol v1.2.3](protocols/github-badge-telemetry-counter-protocol-v1-2-3.md) | Use when deciding which badges, counters, analytics, traffic checks, or validation checks actually make sense for a GitHub repo or GitHub Page, without adding vanity widgets or numbers that do not mean anything useful. |
-| 📝[GitHub README Framing and Authoring Protocol v2](protocols/github-readme-framing-authoring-protocol-v2.md)  | Use when writing or restructuring a GitHub repository README from repository evidence, reader fit, and the real job the README must perform, instead of relying on chat momentum, summaries, or generic README templates. |
-| ⚙️[GPT Agentic Posture Contract](protocols/gpt-agentic-posture-contract.md) | Use when you want ChatGPT to work more like Codex: tool-aware, grounded in real files and artifacts, using Canvas as an execution ledger, verifying before claiming, and stopping when the task is not ready to proceed. |
-| 🌐[Public Page Publication Protocol v2](protocols/public-page-publication-protocol-v2.md)  | Use when preparing, restructuring, or publishing a public page, landing page, showcase, portfolio page, documentation entrypoint, or GitHub Pages site, forcing page role, audience, structure, links, metadata, visual identity, accessibility, and publication risks to close before deploy or push. |
-| 🧩[Idea Shaping Protocol v1](protocols/idea-shaping-protocol-v1.md)  | Use when an idea is still rough and you need to turn it into a clear structure before asking AI to write, plan, design, or build anything. |
-| 🧱[HTML Page & Tool Briefing Protocol v2](protocols/html-page-and-tool-briefing-protocol-v2.md)  | Use when you need to guide an AI from raw intake to a complete implementation brief for a static HTML page, web surface, or local tool, with explicit structure, DOM order, responsive behavior, copy, data schema, and implementation rails. |
-| 🐞[Field Findings & Bugs Protocol v2](protocols/field-findings-and-bugs-protocol-v2.md)  | Use during reviews or multi-lens analysis to capture findings and bugs as a structured artifact, keeping evidence, inference, uncertainty, relations, and later promotion separate. |
-| 🛰️[HTML and Website Discovery Set Protocol v1.2](protocols/html-and-website-discovery-set-protocol-v1-2.md)  | Use when preparing static HTML pages or websites with machine-readable discovery files, head metadata, canonical URLs, sitemap, robots rules, and low-noise footer links, especially for GitHub Pages and other static publication surfaces. |
-| 🌀[PHI-Lens Protocol v4.a](protocols/phi-lens-protocol-v4-a.md)  | Use for non-trivial AI tasks where constraints interact, keeping multiple lenses active and resolving conflicts through golden-ratio-inspired asymmetry, Fibonacci-like non-uniform growth, and explicit dominant/counterforce priority instead of flat compromise. |
-| 🔍[Pre-Task Expansion Protocol v1](protocols/pre-task-expansion-protocol-v1.md)  | Use when you need to stop an AI from collapsing too quickly into the obvious answer, making it expose alternative readings, lay the problem flat, group the real tensions, and build down only after the surrounding shape is visible. |
-| 🗣️[Output for Real Readers Protocol v2](protocols/output-for-real-readers-protocol-v2.md)  | Use when asking AI to write guides, README text, emails, pages, forms, instructions, or other reader-facing material, forcing reader, purpose, tone, constraints, and language to close before it writes in the wrong voice. |
-| 🧬[Structural Shaping Protocol v1](protocols/structural-shaping-protocol-v1.md)  | Use when ambiguous input needs to be shaped into operational form before synthesis, with gates, evidence level, source boundaries, and artifact direction kept explicit. |
-| 📡[System Reading Protocol v0.2](protocols/system-reading-protocol-v0-2.md)  | Use when reading the gap between declared intent and observable behavior to extract the operative principle of a system without producing premature solutions. |
-| 🔺[Triad AI Orchestration Protocol v3](protocols/triad-ai-orchestration-protocol-v3.md)  | Use when running a review loop between an executing AI near the real target and a reviewing AI over snapshots, repo state, diffs, or files, with the operator mediating updates, preserving target authority, and keeping claims, patch status, and test evidence explicit. |
+## 🚦 Start here: choose by situation
+
+Do **not** pick a protocol by name first. 🧩  
+Pick it by the **failure mode you want to prevent**. ⚠️
+
+### 🐣 I have a rough idea, but it is not ready for execution
+Use these when the work is still fuzzy, overloaded, or easy for AI to collapse too quickly. 🌫️➡️🧱
+
+- 🧩 [Idea Shaping Protocol v1](protocols/idea-shaping-protocol-v1.md)
+- 🔍 [Pre-Task Expansion Protocol v1](protocols/pre-task-expansion-protocol-v1.md)
+- 🧬 [Structural Shaping Protocol v1](protocols/structural-shaping-protocol-v1.md)
+- 📡 [System Reading Protocol v0.2](protocols/system-reading-protocol-v0-2.md)
+
+### 🧾 I need to brief AI before it builds, writes, or implements
+Use these when the goal is to turn intent into an execution-ready brief. 🎯📐🛠️
+
+- 🧱 [HTML Page & Tool Briefing Protocol v2](protocols/html-page-and-tool-briefing-protocol-v2.md)
+- 🗣️ [Output for Real Readers Protocol v2](protocols/output-for-real-readers-protocol-v2.md)
+
+### 🐞 I need AI to inspect, review, or preserve findings
+Use these when evidence, uncertainty, observations, bugs, or claims must stay separated. 🔎🧪📌
+
+- 🐞 [Field Findings & Bugs Protocol v2](protocols/field-findings-and-bugs-protocol-v2.md)
+- 📡 [System Reading Protocol v0.2](protocols/system-reading-protocol-v0-2.md)
+
+### 🧠 I need AI to reason before it acts
+Use these when the problem is not just unclear, but structurally easy to collapse, misread, over-simplify, or resolve with a fake compromise. 🧠⚖️🔍
+
+- 🔍 [Pre-Task Expansion Protocol v1](protocols/pre-task-expansion-protocol-v1.md)
+- 📡 [System Reading Protocol v0.2](protocols/system-reading-protocol-v0-2.md)
+- 🌀 [PHI-Lens Protocol v4.a](protocols/phi-lens-protocol-v4-a.md)
+
+### 🐙 I am working on GitHub, GitHub Pages, a public repo, or a project page
+Use these when the work touches repositories, README files, GitHub Pages, badges, telemetry, discovery files, public project pages, or publication hygiene. 🐙📦🌐🚀
+
+- 🚦 [GitHub Repository Publication Preparation Protocol v2](protocols/github-repository-publication-preparation-protocol-v2.md)
+- 📝 [GitHub README Framing and Authoring Protocol v2](protocols/github-readme-framing-authoring-protocol-v2.md)
+- 🧿 [GitHub Pages Discovery Set Protocol v1](protocols/github-pages-discovery-set-protocol-v1.md)
+- 📊 [GitHub Badge, Telemetry & Counter Protocol v1.2.3](protocols/github-badge-telemetry-counter-protocol-v1-2-3.md)
+- 🌐 [Public Page Publication Protocol v2](protocols/public-page-publication-protocol-v2.md)
+- 🛰️ [HTML and Website Discovery Set Protocol v1.2](protocols/html-and-website-discovery-set-protocol-v1-2.md)
+
+### ⚙️ I need AI to operate across files, tools, repo state, or multiple passes
+Use these when the AI session itself needs stronger behavior rails. 🤖🧭🧰
+
+- ⚙️ [GPT Agentic Posture Contract](protocols/gpt-agentic-posture-contract.md)
+- 🔺 [Triad AI Orchestration Protocol v3](protocols/triad-ai-orchestration-protocol-v3.md)
+- 🌀 [PHI-Lens Protocol v4.a](protocols/phi-lens-protocol-v4-a.md)
+
+---
+
+## 🧭 Protocol map
+
+Some protocols appear in more than one lane because they can play different roles. That is intentional, but stacking is still not the default. 🔁🛑
+
+| Lane | Use when | Protocols |
+|---|---|---|
+| 🐣 **Shape the work** | The task is ambiguous, premature, overloaded, or underspecified. | 🧩 Idea Shaping · 🔍 Pre-Task Expansion · 🧬 Structural Shaping · 📡 System Reading |
+| 🧾 **Brief the artifact** | AI needs a clear brief before writing, building, or structuring output. | 🧱 HTML Page & Tool Briefing · 🗣️ Output for Real Readers |
+| 🐞 **Review findings and evidence** | The job is inspection, bugs, uncertainty, evidence, or claim control. | 🐞 Field Findings & Bugs · 📡 System Reading |
+| 🧠 **Reasoning, constraints & system reading** | The task needs expansion, system interpretation, or constraint-aware reasoning before output. | 🔍 Pre-Task Expansion · 📡 System Reading · 🌀 PHI-Lens |
+| 🐙 **GitHub / public repo & page publishing** | The work touches GitHub, Pages, README, public pages, discovery files, badges, or publication hygiene. | 🚦 Repository Publication · 📝 README Framing · 🧿 Pages Discovery · 📊 Badge/Telemetry · 🌐 Public Page Publication · 🛰️ Website Discovery |
+| ⚙️ **Govern agentic sessions** | AI must operate with tools, files, repo state, review loops, or multi-pass control. | ⚙️ Agentic Posture · 🔺 Triad Orchestration |
+
+---
+
+## 🧪 Minimal stacks
+
+Default rule: use **one protocol**. ☝️  
+Stack only when one protocol controls the session and another controls the artifact or publication target. 🧱➕🧭
+
+### 🐙 Publish a GitHub repository cleanly
+
+1. 🚦 [GitHub Repository Publication Preparation Protocol v2](protocols/github-repository-publication-preparation-protocol-v2.md)
+2. 📝 [GitHub README Framing and Authoring Protocol v2](protocols/github-readme-framing-authoring-protocol-v2.md)
+3. 📊 [GitHub Badge, Telemetry & Counter Protocol v1.2.3](protocols/github-badge-telemetry-counter-protocol-v1-2-3.md) only if badges, counters, analytics, or validation checks are actually needed
+
+### 🌐 Prepare a public project page or GitHub Pages surface
+
+1. 🌐 [Public Page Publication Protocol v2](protocols/public-page-publication-protocol-v2.md)
+2. 🧱 [HTML Page & Tool Briefing Protocol v2](protocols/html-page-and-tool-briefing-protocol-v2.md) if implementation briefing is needed
+3. 🧿 [GitHub Pages Discovery Set Protocol v1](protocols/github-pages-discovery-set-protocol-v1.md) or 🛰️ [HTML and Website Discovery Set Protocol v1.2](protocols/html-and-website-discovery-set-protocol-v1-2.md) before publishing
+
+### 🐞 Review messy findings without losing evidence
+
+1. 🐞 [Field Findings & Bugs Protocol v2](protocols/field-findings-and-bugs-protocol-v2.md)
+2. 🌀 [PHI-Lens Protocol v4.a](protocols/phi-lens-protocol-v4-a.md) only if constraints conflict and a flat compromise would be misleading
+
+### 🧠 Reason through a hard, ambiguous, or constraint-heavy task
+
+1. 🔍 [Pre-Task Expansion Protocol v1](protocols/pre-task-expansion-protocol-v1.md) if the task may collapse too quickly into the obvious answer
+2. 📡 [System Reading Protocol v0.2](protocols/system-reading-protocol-v0-2.md) if the real system behavior matters more than declared intent
+3. 🌀 [PHI-Lens Protocol v4.a](protocols/phi-lens-protocol-v4-a.md) only if constraints interact and the output needs an explicit gate
+
+### ⚙️ Run a complex AI-assisted repo or file session
+
+1. ⚙️ [GPT Agentic Posture Contract](protocols/gpt-agentic-posture-contract.md)
+2. 🔺 [Triad AI Orchestration Protocol v3](protocols/triad-ai-orchestration-protocol-v3.md) only if executor/reviewer separation is needed
+3. 🐞 [Field Findings & Bugs Protocol v2](protocols/field-findings-and-bugs-protocol-v2.md) if findings must be captured as evidence
+
+---
 
 ## 🧷 How to use a protocol
 
-1. Pick the protocol closest to the actual job.
-2. Paste the protocol into the AI context before execution.
-3. State the task, the target files or material, and any hard constraints.
-4. Let the protocol control the workflow: questions, gates, review, assumptions, and final output.
+1. 🎯 Pick the protocol closest to the actual job.
+2. 📋 Paste or upload the protocol into the AI context before execution.
+3. 📦 Provide the target material: files, repo snapshot, page, README, bug report, idea, or constraints.
+4. ✅ Let the protocol control the workflow: questions, gates, review, assumptions, stop conditions, and final output.
 
-Do not stack protocols casually. Use the smallest set that fits the task.
+Do not stack protocols casually. 🛑  
+Use the smallest set that fits the task. 🧘‍♂️
 
-For repository work, give the AI the repository state or a current snapshot. For GitHub-based loops, make sure the AI can inspect the current files, diffs, or pushed state before judging the work.
+---
+
+## 🗃️ Protocol reference
+
+| Protocol | Best use |
+|---|---|
+| 🧿 [GitHub Pages Discovery Set Protocol v1](protocols/github-pages-discovery-set-protocol-v1.md) | Prepare GitHub Pages user/org sites, project sites, or custom-domain Pages sites with correct publication roots, discovery files, canonical URLs, sitemap, robots handling, and low-noise machine-readable footer links without breaking GitHub Pages path rules. |
+| 🚦 [GitHub Repository Publication Preparation Protocol v2](protocols/github-repository-publication-preparation-protocol-v2.md) | Prepare a repository for clean GitHub publication, forcing project classification, workspace and risk audit, minimal file/package decisions, GitHub feature choices, and confirmation before commits, remotes, Pages, or push. |
+| 📊 [GitHub Badge, Telemetry & Counter Protocol v1.2.3](protocols/github-badge-telemetry-counter-protocol-v1-2-3.md) | Decide which badges, counters, analytics, traffic checks, or validation checks make sense for a GitHub repo or GitHub Page without adding vanity widgets. |
+| 📝 [GitHub README Framing and Authoring Protocol v2](protocols/github-readme-framing-authoring-protocol-v2.md) | Write or restructure a GitHub repository README from repository evidence, reader fit, and the real job the README must perform. |
+| ⚙️ [GPT Agentic Posture Contract](protocols/gpt-agentic-posture-contract.md) | Make ChatGPT work more like Codex: tool-aware, grounded in real files and artifacts, ledger-based, verification-oriented, and willing to stop when the task is not ready. |
+| 🌐 [Public Page Publication Protocol v2](protocols/public-page-publication-protocol-v2.md) | Prepare, restructure, or publish a public page, landing page, showcase, portfolio page, documentation entrypoint, or GitHub Pages site with page role, audience, metadata, accessibility, links, visual identity, and publication risks closed before deploy or push. |
+| 🧩 [Idea Shaping Protocol v1](protocols/idea-shaping-protocol-v1.md) | Turn a rough idea into a clear structure before asking AI to write, plan, design, or build anything. |
+| 🧱 [HTML Page & Tool Briefing Protocol v2](protocols/html-page-and-tool-briefing-protocol-v2.md) | Guide an AI from raw intake to a complete implementation brief for a static HTML page, web surface, or local tool. |
+| 🐞 [Field Findings & Bugs Protocol v2](protocols/field-findings-and-bugs-protocol-v2.md) | Capture findings and bugs as structured artifacts while keeping evidence, inference, uncertainty, relations, and later promotion separate. |
+| 🛰️ [HTML and Website Discovery Set Protocol v1.2](protocols/html-and-website-discovery-set-protocol-v1-2.md) | Prepare static HTML pages or websites with machine-readable discovery files, head metadata, canonical URLs, sitemap, robots rules, and low-noise footer links. |
+| 🌀 [PHI-Lens Protocol v4.a](protocols/phi-lens-protocol-v4-a.md) | Handle non-trivial AI tasks where constraints interact and a flat compromise would hide the dominant force, counterforce, or asymmetry. |
+| 🔍 [Pre-Task Expansion Protocol v1](protocols/pre-task-expansion-protocol-v1.md) | Stop an AI from collapsing too quickly into the obvious answer by exposing alternative readings, tensions, and surrounding shape first. |
+| 🗣️ [Output for Real Readers Protocol v2](protocols/output-for-real-readers-protocol-v2.md) | Write guides, README text, emails, pages, forms, instructions, or reader-facing material with reader, purpose, tone, constraints, and language closed before drafting. |
+| 🧬 [Structural Shaping Protocol v1](protocols/structural-shaping-protocol-v1.md) | Shape ambiguous input into operational form before synthesis, with gates, evidence level, source boundaries, and artifact direction explicit. |
+| 📡 [System Reading Protocol v0.2](protocols/system-reading-protocol-v0-2.md) | Read the gap between declared intent and observable behavior to extract the operative principle of a system without premature solutions. |
+| 🔺 [Triad AI Orchestration Protocol v3](protocols/triad-ai-orchestration-protocol-v3.md) | Run a review loop between an executing AI near the real target and a reviewing AI over snapshots, repo state, diffs, or files while preserving target authority and patch/test evidence. |
+
+---
+
+## 🧰 What this is for
+
+Use this kit when you want AI-assisted work to be more: ✨
+
+- 🔍 inspectable
+- ♻️ repeatable
+- 🧱 structured
+- 🧭 constrained
+- 🐙 repository-aware
+- 🛑 honest about stop conditions
+- 📌 explicit about evidence and assumptions
+
+It is useful for practical, messy, non-theoretical situations where the AI should not simply improvise from a vague prompt. 🧪🛠️
+
+---
 
 ## 🚫 What this is not
 
-This is not a replacement for judgment.
+This is not a replacement for judgment. 🧠
 
-These protocols do not guarantee correctness. They reduce common failure modes: rushing to the obvious answer, writing for the wrong reader, inventing unsupported claims, treating chat summaries as repository truth, publishing before review, or letting AI tools approve their own work.
+These protocols do not guarantee correctness. They reduce common failure modes: rushing to the obvious answer, writing for the wrong reader, inventing unsupported claims, treating chat summaries as repository truth, publishing before review, or letting AI tools approve their own work. ⚠️
 
-They also do not override higher-priority instructions. Safety, legality, privacy, data integrity, and tool limits remain above any protocol in this kit.
+They also do not override higher-priority instructions. Safety, legality, privacy, data integrity, and tool limits remain above any protocol in this kit. 🛡️⚖️🔐
+
+---
 
 ## 🔧 Repository status
 
-Active working kit. Protocols may evolve as they are tested in real workflows.
+Active working kit. 🧪  
+Protocols may evolve as they are tested in real workflows. 🔁
+
+---
 
 ## 🤖 AI-assisted development
 
-This project was developed with AI assistance.
+This project was developed with AI assistance. 🤝🤖
 
-The project, documentation, and repository materials were shaped through human-directed work supported by AI tools during drafting, structuring, review, and refinement.
+The project, documentation, and repository materials were shaped through human-directed work supported by AI tools during drafting, structuring, review, and refinement. 🧭✍️🔎
 
-AI assistance does not make the project automatically correct, complete, or suitable for every use case. Read it, test it, and adapt it to your own context.
+AI assistance does not make the project automatically correct, complete, or suitable for every use case. Read it, test it, and adapt it to your own context. 🧪📌
+
+---
 
 ## 🏷️ License
 
-Creative Commons Attribution-ShareAlike 4.0 International.
+Creative Commons Attribution-ShareAlike 4.0 International. 📄🌍
 
-See [LICENSE](LICENSE).
+See [LICENSE](LICENSE). ✅
