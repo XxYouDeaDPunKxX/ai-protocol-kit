@@ -405,11 +405,6 @@ This project is licensed under `CC BY-SA 4.0` (`Creative Commons Attribution-Sha
 See [`LICENSE`](LICENSE).
 
 
-## Layout note
-
-This version keeps the picker full-width and horizontal. The result card sits below the picker on normal desktop widths, with a compact two-column result layout on wide screens. The protocol index remains collapsed by default.
-
-
 ## v3 layout note
 
 The router is intentionally stacked: picker full-width first, result panel below it. This avoids the compressed side-panel layout on desktop.
