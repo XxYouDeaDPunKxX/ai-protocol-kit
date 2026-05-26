@@ -10,10 +10,10 @@
     "domain_root": "https://xxyoudeadpunkxx.github.io/",
     "discovery_root": "https://xxyoudeadpunkxx.github.io/ai-protocol-kit/"
   },
-  "description": "AI behavior contracts and operational protocols for practical AI-assisted work.",
+  "description": "AI behavior contracts and operational protocols, exposed through a router-first GitHub Pages picker.",
   "page_role": [
+    "router-first protocol discovery",
     "project overview",
-    "guided protocol discovery",
     "protocol library"
   ],
   "discovery_files": {
@@ -26,7 +26,7 @@
     {
       "id": "github-pages-discovery-set-protocol-v1",
       "title": "GitHub Pages Discovery Set Protocol",
-      "group": "GitHub / Pages & Repo",
+      "group": "🧿 GitHub / Public Web",
       "category": "GitHub Pages discovery",
       "description": "Prepare the machine-readable layer for a GitHub Pages site without breaking Pages path rules.",
       "use_when": "Use when a GitHub Pages page or site needs correct canonical URLs, discovery files, sitemap, robots handling, and low-noise machine-readable links.",
@@ -35,7 +35,7 @@
     {
       "id": "github-repository-publication-preparation-protocol-v2",
       "title": "GitHub Repository Publication Preparation Protocol",
-      "group": "GitHub / Pages & Repo",
+      "group": "🧿 GitHub / Public Web",
       "category": "Repository publication",
       "description": "Prepare a repository before making it public or presenting it as clean GitHub work.",
       "use_when": "Use when a repository needs a publication audit before visibility changes, Pages setup, commits, remotes, packaging, or push.",
@@ -44,7 +44,7 @@
     {
       "id": "github-badge-telemetry-counter-protocol-v1-2-3",
       "title": "GitHub Badge, Telemetry & Counter Protocol",
-      "group": "GitHub / Pages & Repo",
+      "group": "🧿 GitHub / Public Web",
       "category": "Badges, counters, and repo signals",
       "description": "Choose useful badges, counters, analytics, and checks without adding vanity numbers.",
       "use_when": "Use when a repo or GitHub Page might need badges, counters, analytics, traffic review, or validation checks, and you want to know what is actually worth adding.",
@@ -53,115 +53,134 @@
     {
       "id": "github-readme-framing-authoring-protocol-v2",
       "title": "GitHub README Framing and Authoring Protocol",
-      "group": "Writing",
+      "group": "🧿 GitHub / Public Web",
+      "secondary_groups": [
+        "✍️ Writing"
+      ],
       "category": "Repository README",
       "description": "Write or restructure a GitHub README from repo evidence instead of chat momentum.",
       "use_when": "Use when a README needs to explain the real project, fit the reader, and avoid generic templates or claims not supported by the repository.",
       "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/github-readme-framing-authoring-protocol-v2.md"
     },
     {
-      "id": "gpt-agentic-posture-contract",
-      "title": "GPT Agentic Posture Contract",
-      "group": "Orchestration",
-      "category": "Agentic execution posture",
-      "description": "Make ChatGPT work more like Codex: tool-aware, grounded in real files, and strict about verification.",
-      "use_when": "Use when ChatGPT needs to act as a Codex-like working agent: operate on real files and artifacts, use Canvas as an execution ledger, verify before claiming, respect repository boundaries, and stop when the task is not ready to proceed.",
-      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/gpt-agentic-posture-contract.md"
-    },
-    {
       "id": "public-page-publication-protocol-v2",
       "title": "Public Page Publication Protocol",
-      "group": "Publication",
-      "category": "Public page readiness",
+      "group": "🧿 GitHub / Public Web",
+      "secondary_groups": [
+        "🧱 Briefing / Build"
+      ],
+      "category": "Public page publication",
       "description": "Prepare a public page so it is clear, intentional, and ready before publishing.",
       "use_when": "Use when a public page, landing page, showcase, portfolio entry, documentation entrypoint, or GitHub Pages page needs role, audience, structure, metadata, links, and publication risks checked before release.",
       "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/public-page-publication-protocol-v2.md"
     },
     {
+      "id": "html-and-website-discovery-set-protocol-v1-2",
+      "title": "HTML and Website Discovery Set Protocol",
+      "group": "🧿 GitHub / Public Web",
+      "secondary_groups": [
+        "🧱 Briefing / Build"
+      ],
+      "category": "Website discovery set",
+      "description": "Prepare discovery files and metadata for static HTML pages or websites.",
+      "use_when": "Use when a static site needs metadata, canonical URLs, sitemap, robots rules, llms.txt, raw manifest, and footer machine links.",
+      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/html-and-website-discovery-set-protocol-v1-2.md"
+    },
+    {
       "id": "idea-shaping-protocol-v1",
       "title": "Idea Shaping Protocol",
-      "group": "Shaping",
+      "group": "🧩 Shaping",
       "category": "Idea shaping",
       "description": "Turn a rough idea into a clearer structure before asking AI to write, plan, design, or build.",
       "use_when": "Use when the idea is still vague, mixed, or unstable and needs shape before execution.",
       "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/idea-shaping-protocol-v1.md"
     },
     {
-      "id": "html-page-and-tool-briefing-protocol-v2",
-      "title": "HTML Page & Tool Briefing Protocol",
-      "group": "HTML / Web",
-      "category": "HTML implementation brief",
-      "description": "Create a complete implementation brief for a static HTML page, web surface, or local tool.",
-      "use_when": "Use when an AI needs to build an HTML page or tool from a closed brief with structure, copy, DOM order, responsive behavior, data schema, and implementation rails.",
-      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/html-page-and-tool-briefing-protocol-v2.md"
-    },
-    {
-      "id": "field-findings-and-bugs-protocol-v2",
-      "title": "Field Findings & Bugs Protocol",
-      "group": "Review",
-      "category": "Findings and bugs",
-      "description": "Capture findings and bugs without mixing evidence, inference, uncertainty, and fixes.",
-      "use_when": "Use when a review produces multiple findings and they need to stay structured instead of becoming noisy notes.",
-      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/field-findings-and-bugs-protocol-v2.md"
-    },
-    {
-      "id": "html-and-website-discovery-set-protocol-v1-2",
-      "title": "HTML and Website Discovery Set Protocol",
-      "group": "HTML / Web",
-      "category": "Website discovery",
-      "description": "Prepare discovery files and metadata for static HTML pages or websites.",
-      "use_when": "Use when a static site needs metadata, canonical URLs, sitemap, robots rules, llms.txt, raw manifest, and footer machine links.",
-      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/html-and-website-discovery-set-protocol-v1-2.md"
-    },
-    {
-      "id": "phi-lens-protocol-v4-a",
-      "title": "PHI-Lens Protocol",
-      "group": "Shaping",
-      "category": "Constraint conflict resolution",
-      "description": "Handle non-trivial AI tasks where constraints interact and flat compromise would weaken the result.",
-      "use_when": "Use when the work has competing pressures and needs one priority to lead without ignoring the other constraints.",
-      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/phi-lens-protocol-v4-a.md"
-    },
-    {
       "id": "pre-task-expansion-protocol-v1",
       "title": "Pre-Task Expansion Protocol",
-      "group": "Shaping",
+      "group": "🧩 Shaping",
+      "secondary_groups": [
+        "🧠 Reasoning"
+      ],
       "category": "Pre-task expansion",
       "description": "Slow the AI down before it jumps to the obvious answer.",
       "use_when": "Use when the task needs alternative readings, surrounding context, grouped tensions, and a better problem shape before execution.",
       "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/pre-task-expansion-protocol-v1.md"
     },
     {
-      "id": "output-for-real-readers-protocol-v2",
-      "title": "Output for Real Readers Protocol",
-      "group": "Writing",
-      "category": "Reader-facing output",
-      "description": "Make AI write for people instead of sounding like it is writing for another AI.",
-      "use_when": "Use when guides, README text, emails, instructions, pages, forms, or other reader-facing material need purpose, tone, reader fit, and plain language closed before writing.",
-      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/output-for-real-readers-protocol-v2.md"
-    },
-    {
       "id": "structural-shaping-protocol-v1",
       "title": "Structural Shaping Protocol",
-      "group": "Shaping",
+      "group": "🧩 Shaping",
+      "secondary_groups": [
+        "🧠 Reasoning"
+      ],
       "category": "Operational structure",
       "description": "Shape ambiguous input into operational form before synthesis.",
       "use_when": "Use when material is ambiguous and needs clearer boundaries, evidence, uncertainty, and final direction before producing output.",
       "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/structural-shaping-protocol-v1.md"
     },
     {
+      "id": "phi-lens-protocol-v4-a",
+      "title": "PHI-Lens Protocol",
+      "group": "🧠 Reasoning",
+      "category": "Constraint governance",
+      "description": "Govern non-trivial AI tasks where constraints interact and flat compromise would weaken the result.",
+      "use_when": "Use when fidelity, intent, domain limits, assumptions, compression, critique, or output mode pull against each other and the AI needs an explicit gate before answering.",
+      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/phi-lens-protocol-v4-a.md"
+    },
+    {
       "id": "system-reading-protocol-v0-2",
       "title": "System Reading Protocol",
-      "group": "System Reading",
+      "group": "🧠 Reasoning",
+      "secondary_groups": [
+        "🧩 Shaping",
+        "🐞 Review"
+      ],
       "category": "System interpretation",
       "description": "Understand the gap between what a system claims to do and what it actually does before proposing fixes.",
       "use_when": "Use when a system, workflow, project, or behavior needs to be understood before anyone jumps into solutions.",
       "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/system-reading-protocol-v0-2.md"
     },
     {
+      "id": "html-page-and-tool-briefing-protocol-v2",
+      "title": "HTML Page & Tool Briefing Protocol",
+      "group": "🧱 Briefing / Build",
+      "category": "HTML implementation brief",
+      "description": "Create a complete implementation brief for a static HTML page, web surface, or local tool.",
+      "use_when": "Use when an AI needs to build an HTML page or tool from a closed brief with structure, copy, DOM order, responsive behavior, data schema, and implementation rails.",
+      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/html-page-and-tool-briefing-protocol-v2.md"
+    },
+    {
+      "id": "output-for-real-readers-protocol-v2",
+      "title": "Output for Real Readers Protocol",
+      "group": "✍️ Writing",
+      "category": "Reader-facing output",
+      "description": "Make AI write for people instead of sounding like it is writing for another AI.",
+      "use_when": "Use when guides, README text, emails, instructions, pages, forms, or other reader-facing material need purpose, tone, reader fit, and plain language closed before writing.",
+      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/output-for-real-readers-protocol-v2.md"
+    },
+    {
+      "id": "field-findings-and-bugs-protocol-v2",
+      "title": "Field Findings & Bugs Protocol",
+      "group": "🐞 Review",
+      "category": "Findings and bugs",
+      "description": "Capture findings and bugs without mixing evidence, inference, uncertainty, and fixes.",
+      "use_when": "Use when a review produces multiple findings and they need to stay structured instead of becoming noisy notes.",
+      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/field-findings-and-bugs-protocol-v2.md"
+    },
+    {
+      "id": "gpt-agentic-posture-contract",
+      "title": "GPT Agentic Posture Contract",
+      "group": "⚙️ Orchestration",
+      "category": "Agentic execution posture",
+      "description": "Make ChatGPT work more like Codex: tool-aware, grounded in real files, and strict about verification.",
+      "use_when": "Use when ChatGPT needs to act as a Codex-like working agent: operate on real files and artifacts, use Canvas as an execution ledger, verify before claiming, respect repository boundaries, and stop when the task is not ready to proceed.",
+      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/gpt-agentic-posture-contract.md"
+    },
+    {
       "id": "triad-ai-orchestration-protocol-v3",
       "title": "Triad AI Orchestration Protocol",
-      "group": "Orchestration",
+      "group": "⚙️ Orchestration",
       "category": "Multi-AI review loop",
       "description": "Run a review loop between an executing AI and a reviewing AI while you keep final control.",
       "use_when": "Use when Codex, ChatGPT, repo snapshots, pushed diffs, files, or review findings need a controlled loop across tools.",

@@ -7,14 +7,13 @@ window.APK_PICKER_DATA = {
   "copyInstruction": "Read this protocol exactly as written. Do not rewrite or shorten it. Use it as the behavioral contract for this task or session. If you need to explain something or ask me for input, use plain language. Do not use protocol wording, debug wording, or internal-process language.",
   "groups": [
     "All",
-    "Shaping",
-    "Writing",
-    "Review",
-    "Publication",
-    "GitHub / Pages & Repo",
-    "HTML / Web",
-    "Orchestration",
-    "System Reading"
+    "🧩 Shaping",
+    "🧠 Reasoning",
+    "🧱 Briefing / Build",
+    "✍️ Writing",
+    "🐞 Review",
+    "🧿 GitHub / Public Web",
+    "⚙️ Orchestration"
   ],
   "steps": [
     {
@@ -32,7 +31,7 @@ window.APK_PICKER_DATA = {
           ]
         },
         {
-          "label": "a text",
+          "label": "reader-facing text",
           "tags": [
             "text",
             "writing",
@@ -52,7 +51,7 @@ window.APK_PICKER_DATA = {
           ]
         },
         {
-          "label": "a repository",
+          "label": "a GitHub repo",
           "tags": [
             "repository",
             "github",
@@ -72,7 +71,7 @@ window.APK_PICKER_DATA = {
           ]
         },
         {
-          "label": "a decision",
+          "label": "a decision I need to make",
           "tags": [
             "decision",
             "next-move",
@@ -82,7 +81,7 @@ window.APK_PICKER_DATA = {
           ]
         },
         {
-          "label": "a session",
+          "label": "an AI session",
           "tags": [
             "session",
             "context",
@@ -92,7 +91,7 @@ window.APK_PICKER_DATA = {
           ]
         },
         {
-          "label": "a workflow",
+          "label": "a workflow with moving parts",
           "tags": [
             "workflow",
             "process",
@@ -112,7 +111,7 @@ window.APK_PICKER_DATA = {
           ]
         },
         {
-          "label": "something I want to publish",
+          "label": "something public",
           "tags": [
             "publication",
             "public",
@@ -169,7 +168,7 @@ window.APK_PICKER_DATA = {
           ]
         },
         {
-          "label": "it sounds wrong",
+          "label": "the voice feels wrong",
           "tags": [
             "wrong-voice",
             "tone",
@@ -179,7 +178,7 @@ window.APK_PICKER_DATA = {
           ]
         },
         {
-          "label": "it looks almost right",
+          "label": "it looks right but feels weak",
           "tags": [
             "plausible-but-weak",
             "hidden-gap",
@@ -189,7 +188,7 @@ window.APK_PICKER_DATA = {
           ]
         },
         {
-          "label": "it is hard to trust",
+          "label": "I cannot trust the claims",
           "tags": [
             "trust-gap",
             "evidence",
@@ -209,7 +208,7 @@ window.APK_PICKER_DATA = {
           ]
         },
         {
-          "label": "there are too many moving parts",
+          "label": "too many moving parts",
           "tags": [
             "many-moving-parts",
             "complex",
@@ -219,7 +218,7 @@ window.APK_PICKER_DATA = {
           ]
         },
         {
-          "label": "I do not know where to start",
+          "label": "I do not know the first move",
           "tags": [
             "no-start",
             "unclear",
@@ -285,7 +284,7 @@ window.APK_PICKER_DATA = {
           ]
         },
         {
-          "label": "prepare the next move",
+          "label": "choose the next move",
           "tags": [
             "next-move",
             "decision",
@@ -295,7 +294,7 @@ window.APK_PICKER_DATA = {
           ]
         },
         {
-          "label": "keep the work controlled",
+          "label": "keep AI under control",
           "tags": [
             "controlled-loop",
             "workflow",
@@ -313,7 +312,7 @@ window.APK_PICKER_DATA = {
           ]
         },
         {
-          "label": "understand what is really happening",
+          "label": "understand the system",
           "tags": [
             "really-happening",
             "system",
@@ -323,7 +322,7 @@ window.APK_PICKER_DATA = {
           ]
         },
         {
-          "label": "prepare implementation",
+          "label": "prepare a build",
           "tags": [
             "implementation",
             "brief",
@@ -342,7 +341,7 @@ window.APK_PICKER_DATA = {
       "path": "protocols/github-pages-discovery-set-protocol-v1.md",
       "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/github-pages-discovery-set-protocol-v1.md",
       "rawUrl": "https://raw.githubusercontent.com/XxYouDeaDPunKxX/ai-protocol-kit/main/protocols/github-pages-discovery-set-protocol-v1.md",
-      "group": "GitHub / Pages & Repo",
+      "group": "🧿 GitHub / Public Web",
       "category": "GitHub Pages discovery",
       "shortDescription": "Prepare the machine-readable layer for a GitHub Pages site without breaking Pages path rules.",
       "useWhen": "Use when a GitHub Pages page or site needs correct canonical URLs, discovery files, sitemap, robots handling, and low-noise machine-readable links.",
@@ -428,7 +427,8 @@ window.APK_PICKER_DATA = {
         "canonical-url",
         "sitemap",
         "robots"
-      ]
+      ],
+      "groupSortKey": 6
     },
     {
       "id": "github-repository-publication-preparation-protocol-v2",
@@ -436,7 +436,7 @@ window.APK_PICKER_DATA = {
       "path": "protocols/github-repository-publication-preparation-protocol-v2.md",
       "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/github-repository-publication-preparation-protocol-v2.md",
       "rawUrl": "https://raw.githubusercontent.com/XxYouDeaDPunKxX/ai-protocol-kit/main/protocols/github-repository-publication-preparation-protocol-v2.md",
-      "group": "GitHub / Pages & Repo",
+      "group": "🧿 GitHub / Public Web",
       "category": "Repository publication",
       "shortDescription": "Prepare a repository before making it public or presenting it as clean GitHub work.",
       "useWhen": "Use when a repository needs a publication audit before visibility changes, Pages setup, commits, remotes, packaging, or push.",
@@ -517,7 +517,8 @@ window.APK_PICKER_DATA = {
         "ready-to-publish",
         "risk",
         "cleanup"
-      ]
+      ],
+      "groupSortKey": 6
     },
     {
       "id": "github-badge-telemetry-counter-protocol-v1-2-3",
@@ -525,7 +526,7 @@ window.APK_PICKER_DATA = {
       "path": "protocols/github-badge-telemetry-counter-protocol-v1-2-3.md",
       "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/github-badge-telemetry-counter-protocol-v1-2-3.md",
       "rawUrl": "https://raw.githubusercontent.com/XxYouDeaDPunKxX/ai-protocol-kit/main/protocols/github-badge-telemetry-counter-protocol-v1-2-3.md",
-      "group": "GitHub / Pages & Repo",
+      "group": "🧿 GitHub / Public Web",
       "category": "Badges, counters, and repo signals",
       "shortDescription": "Choose useful badges, counters, analytics, and checks without adding vanity numbers.",
       "useWhen": "Use when a repo or GitHub Page might need badges, counters, analytics, traffic review, or validation checks, and you want to know what is actually worth adding.",
@@ -610,7 +611,8 @@ window.APK_PICKER_DATA = {
         "trust-gap",
         "cleanup",
         "publishable"
-      ]
+      ],
+      "groupSortKey": 6
     },
     {
       "id": "github-readme-framing-authoring-protocol-v2",
@@ -618,7 +620,7 @@ window.APK_PICKER_DATA = {
       "path": "protocols/github-readme-framing-authoring-protocol-v2.md",
       "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/github-readme-framing-authoring-protocol-v2.md",
       "rawUrl": "https://raw.githubusercontent.com/XxYouDeaDPunKxX/ai-protocol-kit/main/protocols/github-readme-framing-authoring-protocol-v2.md",
-      "group": "Writing",
+      "group": "🧿 GitHub / Public Web",
       "category": "Repository README",
       "shortDescription": "Write or restructure a GitHub README from repo evidence instead of chat momentum.",
       "useWhen": "Use when a README needs to explain the real project, fit the reader, and avoid generic templates or claims not supported by the repository.",
@@ -650,7 +652,10 @@ window.APK_PICKER_DATA = {
         "documentation",
         "reader",
         "template",
-        "repository evidence"
+        "repository evidence",
+        "GitHub public web lane",
+        "GitHub Pages",
+        "public surface"
       ],
       "primaryTags": [
         "readme",
@@ -671,7 +676,12 @@ window.APK_PICKER_DATA = {
         "reader-facing",
         "files",
         "text",
-        "generic-template"
+        "generic-template",
+        "github-pages",
+        "public-web",
+        "public-surface",
+        "publishable",
+        "ready-to-publish"
       ],
       "avoidTags": [
         "non-repository",
@@ -697,7 +707,986 @@ window.APK_PICKER_DATA = {
         "writing",
         "project-explanation",
         "evidence"
-      ]
+      ],
+      "secondaryGroups": [
+        "✍️ Writing"
+      ],
+      "groupSortKey": 6
+    },
+    {
+      "id": "public-page-publication-protocol-v2",
+      "title": "Public Page Publication Protocol",
+      "path": "protocols/public-page-publication-protocol-v2.md",
+      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/public-page-publication-protocol-v2.md",
+      "rawUrl": "https://raw.githubusercontent.com/XxYouDeaDPunKxX/ai-protocol-kit/main/protocols/public-page-publication-protocol-v2.md",
+      "group": "🧿 GitHub / Public Web",
+      "category": "Public page publication",
+      "shortDescription": "Prepare a public page so it is clear, intentional, and ready before publishing.",
+      "useWhen": "Use when a public page, landing page, showcase, portfolio entry, documentation entrypoint, or GitHub Pages page needs role, audience, structure, metadata, links, and publication risks checked before release.",
+      "bestFor": [
+        "public pages",
+        "page role",
+        "audience fit",
+        "publication checks",
+        "page structure",
+        "deploy readiness"
+      ],
+      "notFor": [
+        "private notes",
+        "generic README writing",
+        "pages that are not ready to become public"
+      ],
+      "needs": [
+        "current page files or draft",
+        "public goal",
+        "audience",
+        "links",
+        "deployment target",
+        "known constraints"
+      ],
+      "outputMode": "Publication-ready page plan, risk check, and file/package decisions.",
+      "searchKeywords": [
+        "public page",
+        "landing page",
+        "publish",
+        "deployment",
+        "GitHub Pages",
+        "audience",
+        "metadata",
+        "accessibility",
+        "page structure",
+        "portfolio",
+        "GitHub public web lane",
+        "public surface"
+      ],
+      "primaryTags": [
+        "public-page",
+        "publication",
+        "page",
+        "website",
+        "ready-to-publish",
+        "public-surface",
+        "risk",
+        "publishable",
+        "public",
+        "publication-risk",
+        "unready"
+      ],
+      "secondaryTags": [
+        "reader-facing",
+        "metadata",
+        "structure",
+        "accessibility",
+        "links",
+        "visual-identity",
+        "deploy",
+        "github",
+        "github-pages",
+        "public-web",
+        "public-surface",
+        "publishable",
+        "ready-to-publish"
+      ],
+      "avoidTags": [
+        "private-only",
+        "backend-only",
+        "non-public"
+      ],
+      "companions": [
+        "github-pages-discovery-set-protocol-v1",
+        "html-page-and-tool-briefing-protocol-v2",
+        "output-for-real-readers-protocol-v2"
+      ],
+      "order": 5,
+      "contextRequired": false,
+      "contextTags": [
+        "page",
+        "public-page",
+        "public-surface",
+        "website",
+        "reader-facing",
+        "public"
+      ],
+      "intentTags": [
+        "publishable",
+        "publication",
+        "ready-to-publish",
+        "metadata",
+        "public-surface"
+      ],
+      "secondaryGroups": [
+        "🧱 Briefing / Build"
+      ],
+      "groupSortKey": 6
+    },
+    {
+      "id": "html-and-website-discovery-set-protocol-v1-2",
+      "title": "HTML and Website Discovery Set Protocol",
+      "path": "protocols/html-and-website-discovery-set-protocol-v1-2.md",
+      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/html-and-website-discovery-set-protocol-v1-2.md",
+      "rawUrl": "https://raw.githubusercontent.com/XxYouDeaDPunKxX/ai-protocol-kit/main/protocols/html-and-website-discovery-set-protocol-v1-2.md",
+      "group": "🧿 GitHub / Public Web",
+      "category": "Website discovery set",
+      "shortDescription": "Prepare discovery files and metadata for static HTML pages or websites.",
+      "useWhen": "Use when a static site needs metadata, canonical URLs, sitemap, robots rules, llms.txt, raw manifest, and footer machine links.",
+      "bestFor": [
+        "static HTML",
+        "website metadata",
+        "discovery files",
+        "crawler/LLM readable surfaces"
+      ],
+      "notFor": [
+        "GitHub Pages-specific path decisions when the GitHub-exclusive protocol is needed first"
+      ],
+      "needs": [
+        "site root",
+        "canonical pages",
+        "publication target",
+        "metadata",
+        "discovery file locations"
+      ],
+      "outputMode": "Website discovery set and metadata checklist.",
+      "searchKeywords": [
+        "website",
+        "static HTML",
+        "discovery",
+        "metadata",
+        "sitemap",
+        "robots",
+        "llms",
+        "manifest",
+        "canonical",
+        "crawler",
+        "GitHub public web lane",
+        "GitHub Pages",
+        "public surface"
+      ],
+      "primaryTags": [
+        "website",
+        "html",
+        "discovery",
+        "metadata",
+        "canonical-url",
+        "sitemap",
+        "robots",
+        "machine-readable"
+      ],
+      "secondaryTags": [
+        "static-page",
+        "public",
+        "github-pages",
+        "deploy",
+        "page",
+        "publishable",
+        "github",
+        "public-web",
+        "public-surface",
+        "ready-to-publish"
+      ],
+      "avoidTags": [
+        "backend-app",
+        "non-web",
+        "private-only"
+      ],
+      "companions": [
+        "github-pages-discovery-set-protocol-v1",
+        "public-page-publication-protocol-v2",
+        "html-page-and-tool-briefing-protocol-v2"
+      ],
+      "order": 6,
+      "contextRequired": false,
+      "contextTags": [
+        "website",
+        "html",
+        "discovery",
+        "metadata",
+        "canonical-url",
+        "sitemap",
+        "robots",
+        "machine-readable"
+      ],
+      "intentTags": [
+        "metadata",
+        "publishable",
+        "discovery",
+        "canonical-url"
+      ],
+      "secondaryGroups": [
+        "🧱 Briefing / Build"
+      ],
+      "groupSortKey": 6
+    },
+    {
+      "id": "idea-shaping-protocol-v1",
+      "title": "Idea Shaping Protocol",
+      "path": "protocols/idea-shaping-protocol-v1.md",
+      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/idea-shaping-protocol-v1.md",
+      "rawUrl": "https://raw.githubusercontent.com/XxYouDeaDPunKxX/ai-protocol-kit/main/protocols/idea-shaping-protocol-v1.md",
+      "group": "🧩 Shaping",
+      "category": "Idea shaping",
+      "shortDescription": "Turn a rough idea into a clearer structure before asking AI to write, plan, design, or build.",
+      "useWhen": "Use when the idea is still vague, mixed, or unstable and needs shape before execution.",
+      "bestFor": [
+        "rough ideas",
+        "early concepts",
+        "messy intent",
+        "planning before writing or building"
+      ],
+      "notFor": [
+        "final review",
+        "publication packaging",
+        "implementation details after the idea is already clear"
+      ],
+      "needs": [
+        "the rough idea",
+        "intended use",
+        "constraints",
+        "what feels unclear",
+        "examples or non-goals"
+      ],
+      "outputMode": "Structured idea, boundaries, and next artifact direction.",
+      "searchKeywords": [
+        "idea",
+        "concept",
+        "shape idea",
+        "unclear idea",
+        "brainstorming",
+        "planning",
+        "structure",
+        "early stage"
+      ],
+      "primaryTags": [
+        "idea",
+        "unclear",
+        "early-stage",
+        "shaping",
+        "clarify",
+        "concept",
+        "no-start"
+      ],
+      "secondaryTags": [
+        "vague",
+        "messy",
+        "structure",
+        "next-move",
+        "usable"
+      ],
+      "avoidTags": [
+        "already-implemented",
+        "final-review-only"
+      ],
+      "companions": [
+        "pre-task-expansion-protocol-v1",
+        "structural-shaping-protocol-v1",
+        "system-reading-protocol-v0-2"
+      ],
+      "order": 7,
+      "contextRequired": false,
+      "contextTags": [
+        "idea",
+        "early-stage",
+        "concept",
+        "no-start",
+        "vague"
+      ],
+      "intentTags": [
+        "clarify",
+        "shaping",
+        "structure",
+        "usable"
+      ],
+      "groupSortKey": 1
+    },
+    {
+      "id": "pre-task-expansion-protocol-v1",
+      "title": "Pre-Task Expansion Protocol",
+      "path": "protocols/pre-task-expansion-protocol-v1.md",
+      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/pre-task-expansion-protocol-v1.md",
+      "rawUrl": "https://raw.githubusercontent.com/XxYouDeaDPunKxX/ai-protocol-kit/main/protocols/pre-task-expansion-protocol-v1.md",
+      "group": "🧩 Shaping",
+      "category": "Pre-task expansion",
+      "shortDescription": "Slow the AI down before it jumps to the obvious answer.",
+      "useWhen": "Use when the task needs alternative readings, surrounding context, grouped tensions, and a better problem shape before execution.",
+      "bestFor": [
+        "pre-task thinking",
+        "unclear requests",
+        "alternative readings",
+        "avoiding obvious answers",
+        "expanding the problem frame"
+      ],
+      "notFor": [
+        "tiny direct edits",
+        "urgent one-step tasks",
+        "already closed instructions"
+      ],
+      "needs": [
+        "the task prompt",
+        "available context",
+        "constraints",
+        "what kind of output may follow"
+      ],
+      "outputMode": "Expanded task reading and structured next move.",
+      "searchKeywords": [
+        "pre task",
+        "expansion",
+        "obvious answer",
+        "alternative reading",
+        "unclear request",
+        "framing",
+        "context",
+        "before execution",
+        "reasoning",
+        "system reading",
+        "constraint interaction"
+      ],
+      "primaryTags": [
+        "no-start",
+        "obvious-answer",
+        "expansion",
+        "alternative-readings",
+        "clarify",
+        "framing"
+      ],
+      "secondaryTags": [
+        "idea",
+        "vague",
+        "unclear",
+        "fragile",
+        "early-stage",
+        "many-moving-parts",
+        "next-move",
+        "reasoning",
+        "diagnose",
+        "system",
+        "constraints",
+        "priority"
+      ],
+      "avoidTags": [
+        "final-output-only",
+        "already-decided"
+      ],
+      "companions": [
+        "idea-shaping-protocol-v1",
+        "structural-shaping-protocol-v1",
+        "phi-lens-protocol-v4-a"
+      ],
+      "order": 8,
+      "contextRequired": false,
+      "contextTags": [
+        "no-start",
+        "framing",
+        "expansion",
+        "vague",
+        "unclear",
+        "alternative-readings"
+      ],
+      "intentTags": [
+        "clarify",
+        "framing",
+        "next-move",
+        "structure"
+      ],
+      "secondaryGroups": [
+        "🧠 Reasoning"
+      ],
+      "groupSortKey": 1
+    },
+    {
+      "id": "structural-shaping-protocol-v1",
+      "title": "Structural Shaping Protocol",
+      "path": "protocols/structural-shaping-protocol-v1.md",
+      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/structural-shaping-protocol-v1.md",
+      "rawUrl": "https://raw.githubusercontent.com/XxYouDeaDPunKxX/ai-protocol-kit/main/protocols/structural-shaping-protocol-v1.md",
+      "group": "🧩 Shaping",
+      "category": "Operational structure",
+      "shortDescription": "Shape ambiguous input into operational form before synthesis.",
+      "useWhen": "Use when material is ambiguous and needs clearer boundaries, evidence, uncertainty, and final direction before producing output.",
+      "bestFor": [
+        "ambiguous input",
+        "mixed source material",
+        "synthesis prep",
+        "unclear artifact direction",
+        "deciding what belongs and what does not"
+      ],
+      "notFor": [
+        "direct copy edits",
+        "simple summaries",
+        "already well-structured tasks"
+      ],
+      "needs": [
+        "input material",
+        "intended artifact",
+        "what counts as source material",
+        "what is uncertain",
+        "known constraints"
+      ],
+      "outputMode": "Operational structure and synthesis frame.",
+      "searchKeywords": [
+        "structure",
+        "ambiguous input",
+        "source boundaries",
+        "synthesis",
+        "gates",
+        "evidence",
+        "artifact",
+        "organize material",
+        "reasoning",
+        "system reading",
+        "constraint interaction"
+      ],
+      "primaryTags": [
+        "structure",
+        "ambiguous",
+        "shaping",
+        "evidence",
+        "boundaries",
+        "artifact",
+        "source-boundary"
+      ],
+      "secondaryTags": [
+        "unclear",
+        "messy",
+        "synthesis",
+        "framing",
+        "inspectable",
+        "usable",
+        "idea",
+        "early-stage",
+        "clarify",
+        "no-start",
+        "decision",
+        "next-move",
+        "fragile",
+        "reasoning",
+        "diagnose",
+        "system",
+        "constraints",
+        "many-moving-parts",
+        "priority"
+      ],
+      "avoidTags": [
+        "simple-copy",
+        "no-ambiguity"
+      ],
+      "companions": [
+        "idea-shaping-protocol-v1",
+        "pre-task-expansion-protocol-v1",
+        "system-reading-protocol-v0-2"
+      ],
+      "order": 9,
+      "contextRequired": false,
+      "contextTags": [
+        "ambiguous",
+        "messy",
+        "structure",
+        "source-boundary",
+        "synthesis",
+        "fragile",
+        "evidence"
+      ],
+      "intentTags": [
+        "structure",
+        "clarify",
+        "artifact",
+        "usable",
+        "inspectable"
+      ],
+      "secondaryGroups": [
+        "🧠 Reasoning"
+      ],
+      "groupSortKey": 1
+    },
+    {
+      "id": "phi-lens-protocol-v4-a",
+      "title": "PHI-Lens Protocol",
+      "path": "protocols/phi-lens-protocol-v4-a.md",
+      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/phi-lens-protocol-v4-a.md",
+      "rawUrl": "https://raw.githubusercontent.com/XxYouDeaDPunKxX/ai-protocol-kit/main/protocols/phi-lens-protocol-v4-a.md",
+      "group": "🧠 Reasoning",
+      "category": "Constraint governance",
+      "shortDescription": "Govern non-trivial AI tasks where constraints interact and flat compromise would weaken the result.",
+      "useWhen": "Use when fidelity, intent, domain limits, assumptions, compression, critique, or output mode pull against each other and the AI needs an explicit gate before answering.",
+      "bestFor": [
+        "constraint interaction",
+        "conflicting priorities",
+        "assumption visibility",
+        "output gate selection",
+        "strategic or system-level tasks"
+      ],
+      "notFor": [
+        "simple extraction",
+        "formatting-only tasks",
+        "basic factual lookup",
+        "narrow rewriting",
+        "routine publishing checks"
+      ],
+      "needs": [
+        "goal",
+        "constraints",
+        "tensions",
+        "the priority that should lead if known",
+        "constraints that still matter"
+      ],
+      "outputMode": "Governed answer mode: produce, produce with assumptions, produce limited, ask OP, or suspend/refuse.",
+      "searchKeywords": [
+        "constraints",
+        "tradeoff",
+        "conflict",
+        "priority",
+        "lens",
+        "complex task",
+        "balance",
+        "decision",
+        "structure",
+        "golden ratio",
+        "fibonacci",
+        "reasoning governance",
+        "constraint governance",
+        "assumption visibility",
+        "field mode",
+        "gate selection",
+        "hard pass",
+        "soft pass"
+      ],
+      "primaryTags": [
+        "reasoning",
+        "constraints",
+        "constraint-conflict",
+        "assumptions",
+        "gate",
+        "fidelity",
+        "priority",
+        "complex"
+      ],
+      "secondaryTags": [
+        "fragile",
+        "unclear",
+        "system",
+        "non-trivial",
+        "balance",
+        "decision",
+        "idea",
+        "many-moving-parts",
+        "complex",
+        "priority",
+        "risk",
+        "tradeoff",
+        "trust-gap",
+        "really-happening"
+      ],
+      "avoidTags": [
+        "simple-task",
+        "single-answer",
+        "quick-copy"
+      ],
+      "companions": [
+        "pre-task-expansion-protocol-v1",
+        "structural-shaping-protocol-v1",
+        "field-findings-and-bugs-protocol-v2"
+      ],
+      "order": 10,
+      "contextRequired": false,
+      "contextTags": [
+        "constraints",
+        "tradeoff",
+        "conflict",
+        "complex",
+        "priority",
+        "many-moving-parts",
+        "decision"
+      ],
+      "intentTags": [
+        "decision",
+        "next-move",
+        "priority",
+        "structure"
+      ],
+      "groupSortKey": 2
+    },
+    {
+      "id": "system-reading-protocol-v0-2",
+      "title": "System Reading Protocol",
+      "path": "protocols/system-reading-protocol-v0-2.md",
+      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/system-reading-protocol-v0-2.md",
+      "rawUrl": "https://raw.githubusercontent.com/XxYouDeaDPunKxX/ai-protocol-kit/main/protocols/system-reading-protocol-v0-2.md",
+      "group": "🧠 Reasoning",
+      "category": "System interpretation",
+      "shortDescription": "Understand the gap between what a system claims to do and what it actually does before proposing fixes.",
+      "useWhen": "Use when a system, workflow, project, or behavior needs to be understood before anyone jumps into solutions.",
+      "bestFor": [
+        "system behavior",
+        "mismatch between stated and actual function",
+        "diagnosis before fixing",
+        "understanding what is really driving the behavior"
+      ],
+      "notFor": [
+        "immediate implementation",
+        "quick copywriting",
+        "tasks where the cause is already known"
+      ],
+      "needs": [
+        "declared intent",
+        "observed behavior",
+        "examples",
+        "context",
+        "what must not be assumed"
+      ],
+      "outputMode": "System reading and behavior explanation.",
+      "searchKeywords": [
+        "system",
+        "behavior",
+        "diagnosis",
+        "intent",
+        "observable behavior",
+        "principle",
+        "mismatch",
+        "reading",
+        "analysis",
+        "reasoning",
+        "system reading",
+        "constraint interaction"
+      ],
+      "primaryTags": [
+        "system",
+        "behavior",
+        "intent-gap",
+        "observe",
+        "understand",
+        "diagnose",
+        "really-happening"
+      ],
+      "secondaryTags": [
+        "unclear",
+        "trust-gap",
+        "no-premature-solution",
+        "analysis",
+        "workflow",
+        "reasoning",
+        "diagnose",
+        "system",
+        "constraints",
+        "many-moving-parts",
+        "priority"
+      ],
+      "avoidTags": [
+        "direct-build",
+        "final-copy-only"
+      ],
+      "companions": [
+        "structural-shaping-protocol-v1",
+        "idea-shaping-protocol-v1",
+        "phi-lens-protocol-v4-a"
+      ],
+      "order": 11,
+      "contextRequired": false,
+      "contextTags": [
+        "system",
+        "behavior",
+        "intent-gap",
+        "really-happening",
+        "diagnose",
+        "workflow"
+      ],
+      "intentTags": [
+        "really-happening",
+        "system",
+        "diagnose",
+        "behavior"
+      ],
+      "secondaryGroups": [
+        "🧩 Shaping",
+        "🐞 Review"
+      ],
+      "groupSortKey": 2
+    },
+    {
+      "id": "html-page-and-tool-briefing-protocol-v2",
+      "title": "HTML Page & Tool Briefing Protocol",
+      "path": "protocols/html-page-and-tool-briefing-protocol-v2.md",
+      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/html-page-and-tool-briefing-protocol-v2.md",
+      "rawUrl": "https://raw.githubusercontent.com/XxYouDeaDPunKxX/ai-protocol-kit/main/protocols/html-page-and-tool-briefing-protocol-v2.md",
+      "group": "🧱 Briefing / Build",
+      "category": "HTML implementation brief",
+      "shortDescription": "Create a complete implementation brief for a static HTML page, web surface, or local tool.",
+      "useWhen": "Use when an AI needs to build an HTML page or tool from a closed brief with structure, copy, DOM order, responsive behavior, data schema, and implementation rails.",
+      "bestFor": [
+        "static HTML",
+        "local tools",
+        "web surfaces",
+        "implementation briefs",
+        "DOM order",
+        "responsive behavior"
+      ],
+      "notFor": [
+        "live backend apps",
+        "vague page ideas that still need public-role decisions",
+        "visual styling without structure"
+      ],
+      "needs": [
+        "purpose",
+        "views",
+        "content",
+        "behavior",
+        "storage/data needs if any",
+        "responsive targets",
+        "constraints"
+      ],
+      "outputMode": "Complete build brief for one-shot implementation.",
+      "searchKeywords": [
+        "HTML",
+        "CSS",
+        "static page",
+        "web tool",
+        "implementation",
+        "brief",
+        "DOM order",
+        "responsive",
+        "data schema",
+        "local tool"
+      ],
+      "primaryTags": [
+        "html",
+        "web",
+        "implementation",
+        "brief",
+        "static-page",
+        "tool",
+        "structure",
+        "responsive",
+        "build-ready",
+        "data-schema"
+      ],
+      "secondaryTags": [
+        "page",
+        "website",
+        "copy",
+        "data-schema",
+        "accessibility",
+        "dom-order"
+      ],
+      "avoidTags": [
+        "non-html",
+        "pure-text",
+        "backend-app"
+      ],
+      "companions": [
+        "public-page-publication-protocol-v2",
+        "html-and-website-discovery-set-protocol-v1-2",
+        "output-for-real-readers-protocol-v2"
+      ],
+      "order": 12,
+      "contextRequired": false,
+      "contextTags": [
+        "html",
+        "web",
+        "implementation",
+        "brief",
+        "static-page",
+        "tool",
+        "data-schema",
+        "build-ready",
+        "page",
+        "website",
+        "public-surface"
+      ],
+      "intentTags": [
+        "implementation",
+        "brief",
+        "html",
+        "build-ready",
+        "data-schema"
+      ],
+      "groupSortKey": 3
+    },
+    {
+      "id": "output-for-real-readers-protocol-v2",
+      "title": "Output for Real Readers Protocol",
+      "path": "protocols/output-for-real-readers-protocol-v2.md",
+      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/output-for-real-readers-protocol-v2.md",
+      "rawUrl": "https://raw.githubusercontent.com/XxYouDeaDPunKxX/ai-protocol-kit/main/protocols/output-for-real-readers-protocol-v2.md",
+      "group": "✍️ Writing",
+      "category": "Reader-facing output",
+      "shortDescription": "Make AI write for people instead of sounding like it is writing for another AI.",
+      "useWhen": "Use when guides, README text, emails, instructions, pages, forms, or other reader-facing material need purpose, tone, reader fit, and plain language closed before writing.",
+      "bestFor": [
+        "reader-facing text",
+        "guides",
+        "README sections",
+        "public copy",
+        "instructions",
+        "emails",
+        "forms"
+      ],
+      "notFor": [
+        "internal reasoning notes",
+        "raw technical specs",
+        "protocol-authoring unless the output is meant for real readers"
+      ],
+      "needs": [
+        "reader",
+        "purpose",
+        "tone",
+        "constraints",
+        "material to rewrite or produce",
+        "where it will appear"
+      ],
+      "outputMode": "Reader-fit copy.",
+      "searchKeywords": [
+        "writing",
+        "reader",
+        "voice",
+        "tone",
+        "guide",
+        "email",
+        "instructions",
+        "README",
+        "public copy",
+        "plain language",
+        "wrong voice"
+      ],
+      "primaryTags": [
+        "writing",
+        "reader",
+        "text",
+        "wrong-voice",
+        "readable",
+        "reader-facing",
+        "tone"
+      ],
+      "secondaryTags": [
+        "public",
+        "page",
+        "readme",
+        "guide",
+        "instructions",
+        "clarity",
+        "usable"
+      ],
+      "avoidTags": [
+        "machine-only",
+        "internal-data-only"
+      ],
+      "companions": [
+        "github-readme-framing-authoring-protocol-v2",
+        "public-page-publication-protocol-v2",
+        "html-page-and-tool-briefing-protocol-v2"
+      ],
+      "order": 13,
+      "contextRequired": false,
+      "contextTags": [
+        "text",
+        "reader-facing",
+        "wrong-voice",
+        "tone",
+        "readable",
+        "writing",
+        "reader"
+      ],
+      "intentTags": [
+        "readable",
+        "reader",
+        "writing",
+        "tone",
+        "reader-facing"
+      ],
+      "groupSortKey": 4
+    },
+    {
+      "id": "field-findings-and-bugs-protocol-v2",
+      "title": "Field Findings & Bugs Protocol",
+      "path": "protocols/field-findings-and-bugs-protocol-v2.md",
+      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/field-findings-and-bugs-protocol-v2.md",
+      "rawUrl": "https://raw.githubusercontent.com/XxYouDeaDPunKxX/ai-protocol-kit/main/protocols/field-findings-and-bugs-protocol-v2.md",
+      "group": "🐞 Review",
+      "category": "Findings and bugs",
+      "shortDescription": "Capture findings and bugs without mixing evidence, inference, uncertainty, and fixes.",
+      "useWhen": "Use when a review produces multiple findings and they need to stay structured instead of becoming noisy notes.",
+      "bestFor": [
+        "bug reviews",
+        "field findings",
+        "multi-lens analysis",
+        "evidence tracking",
+        "review artifacts"
+      ],
+      "notFor": [
+        "general brainstorming",
+        "final copywriting",
+        "simple single-issue bug reports"
+      ],
+      "needs": [
+        "artifact under review",
+        "observations",
+        "source material",
+        "uncertainty level",
+        "relation between findings if known"
+      ],
+      "outputMode": "Structured findings artifact.",
+      "searchKeywords": [
+        "bugs",
+        "findings",
+        "review",
+        "evidence",
+        "uncertainty",
+        "issue",
+        "audit",
+        "analysis",
+        "defects",
+        "report"
+      ],
+      "primaryTags": [
+        "review",
+        "bugs",
+        "findings",
+        "evidence",
+        "inspectable",
+        "weak-points",
+        "review-needed",
+        "plausible-but-weak",
+        "hidden-gap",
+        "trust-gap"
+      ],
+      "secondaryTags": [
+        "plausible-but-weak",
+        "trust-gap",
+        "messy",
+        "validation",
+        "audit",
+        "defects",
+        "verify",
+        "plausible",
+        "almost-right",
+        "review",
+        "inspectable"
+      ],
+      "avoidTags": [
+        "pure-creation",
+        "no-review-needed"
+      ],
+      "companions": [
+        "triad-ai-orchestration-protocol-v3",
+        "phi-lens-protocol-v4-a",
+        "structural-shaping-protocol-v1"
+      ],
+      "order": 14,
+      "contextRequired": false,
+      "contextTags": [
+        "review",
+        "findings",
+        "bugs",
+        "weak-points",
+        "review-needed",
+        "plausible-but-weak",
+        "trust-gap"
+      ],
+      "intentTags": [
+        "weak-points",
+        "findings",
+        "bugs",
+        "review-needed",
+        "inspectable",
+        "verify"
+      ],
+      "groupSortKey": 5
     },
     {
       "id": "gpt-agentic-posture-contract",
@@ -705,7 +1694,7 @@ window.APK_PICKER_DATA = {
       "path": "protocols/gpt-agentic-posture-contract.md",
       "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/gpt-agentic-posture-contract.md",
       "rawUrl": "https://raw.githubusercontent.com/XxYouDeaDPunKxX/ai-protocol-kit/main/protocols/gpt-agentic-posture-contract.md",
-      "group": "Orchestration",
+      "group": "⚙️ Orchestration",
       "category": "Agentic execution posture",
       "shortDescription": "Make ChatGPT work more like Codex: tool-aware, grounded in real files, and strict about verification.",
       "useWhen": "Use when ChatGPT needs to act as a Codex-like working agent: operate on real files and artifacts, use Canvas as an execution ledger, verify before claiming, respect repository boundaries, and stop when the task is not ready to proceed.",
@@ -804,7 +1793,7 @@ window.APK_PICKER_DATA = {
         "field-findings-and-bugs-protocol-v2",
         "pre-task-expansion-protocol-v1"
       ],
-      "order": 5,
+      "order": 15,
       "contextRequired": true,
       "contextTags": [
         "session",
@@ -830,903 +1819,8 @@ window.APK_PICKER_DATA = {
         "codex-like",
         "write-safety",
         "boundaries"
-      ]
-    },
-    {
-      "id": "public-page-publication-protocol-v2",
-      "title": "Public Page Publication Protocol",
-      "path": "protocols/public-page-publication-protocol-v2.md",
-      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/public-page-publication-protocol-v2.md",
-      "rawUrl": "https://raw.githubusercontent.com/XxYouDeaDPunKxX/ai-protocol-kit/main/protocols/public-page-publication-protocol-v2.md",
-      "group": "Publication",
-      "category": "Public page readiness",
-      "shortDescription": "Prepare a public page so it is clear, intentional, and ready before publishing.",
-      "useWhen": "Use when a public page, landing page, showcase, portfolio entry, documentation entrypoint, or GitHub Pages page needs role, audience, structure, metadata, links, and publication risks checked before release.",
-      "bestFor": [
-        "public pages",
-        "page role",
-        "audience fit",
-        "publication checks",
-        "page structure",
-        "deploy readiness"
       ],
-      "notFor": [
-        "private notes",
-        "generic README writing",
-        "pages that are not ready to become public"
-      ],
-      "needs": [
-        "current page files or draft",
-        "public goal",
-        "audience",
-        "links",
-        "deployment target",
-        "known constraints"
-      ],
-      "outputMode": "Publication-ready page plan, risk check, and file/package decisions.",
-      "searchKeywords": [
-        "public page",
-        "landing page",
-        "publish",
-        "deployment",
-        "GitHub Pages",
-        "audience",
-        "metadata",
-        "accessibility",
-        "page structure",
-        "portfolio"
-      ],
-      "primaryTags": [
-        "public-page",
-        "publication",
-        "page",
-        "website",
-        "ready-to-publish",
-        "public-surface",
-        "risk",
-        "publishable",
-        "public",
-        "publication-risk",
-        "unready"
-      ],
-      "secondaryTags": [
-        "reader-facing",
-        "metadata",
-        "structure",
-        "accessibility",
-        "links",
-        "visual-identity",
-        "deploy"
-      ],
-      "avoidTags": [
-        "private-only",
-        "backend-only",
-        "non-public"
-      ],
-      "companions": [
-        "github-pages-discovery-set-protocol-v1",
-        "html-page-and-tool-briefing-protocol-v2",
-        "output-for-real-readers-protocol-v2"
-      ],
-      "order": 6,
-      "contextRequired": false,
-      "contextTags": [
-        "page",
-        "public-page",
-        "public-surface",
-        "website",
-        "reader-facing",
-        "public"
-      ],
-      "intentTags": [
-        "publishable",
-        "publication",
-        "ready-to-publish",
-        "metadata",
-        "public-surface"
-      ]
-    },
-    {
-      "id": "idea-shaping-protocol-v1",
-      "title": "Idea Shaping Protocol",
-      "path": "protocols/idea-shaping-protocol-v1.md",
-      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/idea-shaping-protocol-v1.md",
-      "rawUrl": "https://raw.githubusercontent.com/XxYouDeaDPunKxX/ai-protocol-kit/main/protocols/idea-shaping-protocol-v1.md",
-      "group": "Shaping",
-      "category": "Idea shaping",
-      "shortDescription": "Turn a rough idea into a clearer structure before asking AI to write, plan, design, or build.",
-      "useWhen": "Use when the idea is still vague, mixed, or unstable and needs shape before execution.",
-      "bestFor": [
-        "rough ideas",
-        "early concepts",
-        "messy intent",
-        "planning before writing or building"
-      ],
-      "notFor": [
-        "final review",
-        "publication packaging",
-        "implementation details after the idea is already clear"
-      ],
-      "needs": [
-        "the rough idea",
-        "intended use",
-        "constraints",
-        "what feels unclear",
-        "examples or non-goals"
-      ],
-      "outputMode": "Structured idea, boundaries, and next artifact direction.",
-      "searchKeywords": [
-        "idea",
-        "concept",
-        "shape idea",
-        "unclear idea",
-        "brainstorming",
-        "planning",
-        "structure",
-        "early stage"
-      ],
-      "primaryTags": [
-        "idea",
-        "unclear",
-        "early-stage",
-        "shaping",
-        "clarify",
-        "concept",
-        "no-start"
-      ],
-      "secondaryTags": [
-        "vague",
-        "messy",
-        "structure",
-        "next-move",
-        "usable"
-      ],
-      "avoidTags": [
-        "already-implemented",
-        "final-review-only"
-      ],
-      "companions": [
-        "pre-task-expansion-protocol-v1",
-        "structural-shaping-protocol-v1",
-        "system-reading-protocol-v0-2"
-      ],
-      "order": 7,
-      "contextRequired": false,
-      "contextTags": [
-        "idea",
-        "early-stage",
-        "concept",
-        "no-start",
-        "vague"
-      ],
-      "intentTags": [
-        "clarify",
-        "shaping",
-        "structure",
-        "usable"
-      ]
-    },
-    {
-      "id": "html-page-and-tool-briefing-protocol-v2",
-      "title": "HTML Page & Tool Briefing Protocol",
-      "path": "protocols/html-page-and-tool-briefing-protocol-v2.md",
-      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/html-page-and-tool-briefing-protocol-v2.md",
-      "rawUrl": "https://raw.githubusercontent.com/XxYouDeaDPunKxX/ai-protocol-kit/main/protocols/html-page-and-tool-briefing-protocol-v2.md",
-      "group": "HTML / Web",
-      "category": "HTML implementation brief",
-      "shortDescription": "Create a complete implementation brief for a static HTML page, web surface, or local tool.",
-      "useWhen": "Use when an AI needs to build an HTML page or tool from a closed brief with structure, copy, DOM order, responsive behavior, data schema, and implementation rails.",
-      "bestFor": [
-        "static HTML",
-        "local tools",
-        "web surfaces",
-        "implementation briefs",
-        "DOM order",
-        "responsive behavior"
-      ],
-      "notFor": [
-        "live backend apps",
-        "vague page ideas that still need public-role decisions",
-        "visual styling without structure"
-      ],
-      "needs": [
-        "purpose",
-        "views",
-        "content",
-        "behavior",
-        "storage/data needs if any",
-        "responsive targets",
-        "constraints"
-      ],
-      "outputMode": "Complete build brief for one-shot implementation.",
-      "searchKeywords": [
-        "HTML",
-        "CSS",
-        "static page",
-        "web tool",
-        "implementation",
-        "brief",
-        "DOM order",
-        "responsive",
-        "data schema",
-        "local tool"
-      ],
-      "primaryTags": [
-        "html",
-        "web",
-        "implementation",
-        "brief",
-        "static-page",
-        "tool",
-        "structure",
-        "responsive",
-        "build-ready",
-        "data-schema"
-      ],
-      "secondaryTags": [
-        "page",
-        "website",
-        "copy",
-        "data-schema",
-        "accessibility",
-        "dom-order"
-      ],
-      "avoidTags": [
-        "non-html",
-        "pure-text",
-        "backend-app"
-      ],
-      "companions": [
-        "public-page-publication-protocol-v2",
-        "html-and-website-discovery-set-protocol-v1-2",
-        "output-for-real-readers-protocol-v2"
-      ],
-      "order": 8,
-      "contextRequired": false,
-      "contextTags": [
-        "html",
-        "web",
-        "implementation",
-        "brief",
-        "static-page",
-        "tool",
-        "data-schema",
-        "build-ready",
-        "page",
-        "website",
-        "public-surface"
-      ],
-      "intentTags": [
-        "implementation",
-        "brief",
-        "html",
-        "build-ready",
-        "data-schema"
-      ]
-    },
-    {
-      "id": "field-findings-and-bugs-protocol-v2",
-      "title": "Field Findings & Bugs Protocol",
-      "path": "protocols/field-findings-and-bugs-protocol-v2.md",
-      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/field-findings-and-bugs-protocol-v2.md",
-      "rawUrl": "https://raw.githubusercontent.com/XxYouDeaDPunKxX/ai-protocol-kit/main/protocols/field-findings-and-bugs-protocol-v2.md",
-      "group": "Review",
-      "category": "Findings and bugs",
-      "shortDescription": "Capture findings and bugs without mixing evidence, inference, uncertainty, and fixes.",
-      "useWhen": "Use when a review produces multiple findings and they need to stay structured instead of becoming noisy notes.",
-      "bestFor": [
-        "bug reviews",
-        "field findings",
-        "multi-lens analysis",
-        "evidence tracking",
-        "review artifacts"
-      ],
-      "notFor": [
-        "general brainstorming",
-        "final copywriting",
-        "simple single-issue bug reports"
-      ],
-      "needs": [
-        "artifact under review",
-        "observations",
-        "source material",
-        "uncertainty level",
-        "relation between findings if known"
-      ],
-      "outputMode": "Structured findings artifact.",
-      "searchKeywords": [
-        "bugs",
-        "findings",
-        "review",
-        "evidence",
-        "uncertainty",
-        "issue",
-        "audit",
-        "analysis",
-        "defects",
-        "report"
-      ],
-      "primaryTags": [
-        "review",
-        "bugs",
-        "findings",
-        "evidence",
-        "inspectable",
-        "weak-points",
-        "review-needed",
-        "plausible-but-weak",
-        "hidden-gap",
-        "trust-gap"
-      ],
-      "secondaryTags": [
-        "plausible-but-weak",
-        "trust-gap",
-        "messy",
-        "validation",
-        "audit",
-        "defects",
-        "verify",
-        "plausible",
-        "almost-right",
-        "review",
-        "inspectable"
-      ],
-      "avoidTags": [
-        "pure-creation",
-        "no-review-needed"
-      ],
-      "companions": [
-        "triad-ai-orchestration-protocol-v3",
-        "phi-lens-protocol-v4-a",
-        "structural-shaping-protocol-v1"
-      ],
-      "order": 9,
-      "contextRequired": false,
-      "contextTags": [
-        "review",
-        "findings",
-        "bugs",
-        "weak-points",
-        "review-needed",
-        "plausible-but-weak",
-        "trust-gap"
-      ],
-      "intentTags": [
-        "weak-points",
-        "findings",
-        "bugs",
-        "review-needed",
-        "inspectable",
-        "verify"
-      ]
-    },
-    {
-      "id": "html-and-website-discovery-set-protocol-v1-2",
-      "title": "HTML and Website Discovery Set Protocol",
-      "path": "protocols/html-and-website-discovery-set-protocol-v1-2.md",
-      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/html-and-website-discovery-set-protocol-v1-2.md",
-      "rawUrl": "https://raw.githubusercontent.com/XxYouDeaDPunKxX/ai-protocol-kit/main/protocols/html-and-website-discovery-set-protocol-v1-2.md",
-      "group": "HTML / Web",
-      "category": "Website discovery",
-      "shortDescription": "Prepare discovery files and metadata for static HTML pages or websites.",
-      "useWhen": "Use when a static site needs metadata, canonical URLs, sitemap, robots rules, llms.txt, raw manifest, and footer machine links.",
-      "bestFor": [
-        "static HTML",
-        "website metadata",
-        "discovery files",
-        "crawler/LLM readable surfaces"
-      ],
-      "notFor": [
-        "GitHub Pages-specific path decisions when the GitHub-exclusive protocol is needed first"
-      ],
-      "needs": [
-        "site root",
-        "canonical pages",
-        "publication target",
-        "metadata",
-        "discovery file locations"
-      ],
-      "outputMode": "Website discovery set and metadata checklist.",
-      "searchKeywords": [
-        "website",
-        "static HTML",
-        "discovery",
-        "metadata",
-        "sitemap",
-        "robots",
-        "llms",
-        "manifest",
-        "canonical",
-        "crawler"
-      ],
-      "primaryTags": [
-        "website",
-        "html",
-        "discovery",
-        "metadata",
-        "canonical-url",
-        "sitemap",
-        "robots",
-        "machine-readable"
-      ],
-      "secondaryTags": [
-        "static-page",
-        "public",
-        "github-pages",
-        "deploy",
-        "page",
-        "publishable"
-      ],
-      "avoidTags": [
-        "backend-app",
-        "non-web",
-        "private-only"
-      ],
-      "companions": [
-        "github-pages-discovery-set-protocol-v1",
-        "public-page-publication-protocol-v2",
-        "html-page-and-tool-briefing-protocol-v2"
-      ],
-      "order": 10,
-      "contextRequired": false,
-      "contextTags": [
-        "website",
-        "html",
-        "discovery",
-        "metadata",
-        "canonical-url",
-        "sitemap",
-        "robots",
-        "machine-readable"
-      ],
-      "intentTags": [
-        "metadata",
-        "publishable",
-        "discovery",
-        "canonical-url"
-      ]
-    },
-    {
-      "id": "phi-lens-protocol-v4-a",
-      "title": "PHI-Lens Protocol",
-      "path": "protocols/phi-lens-protocol-v4-a.md",
-      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/phi-lens-protocol-v4-a.md",
-      "rawUrl": "https://raw.githubusercontent.com/XxYouDeaDPunKxX/ai-protocol-kit/main/protocols/phi-lens-protocol-v4-a.md",
-      "group": "Shaping",
-      "category": "Constraint conflict resolution",
-      "shortDescription": "Handle non-trivial AI tasks where constraints interact and flat compromise would weaken the result.",
-      "useWhen": "Use when the work has competing pressures and needs one priority to lead without ignoring the other constraints.",
-      "bestFor": [
-        "complex constraints",
-        "trade-offs",
-        "conflicting goals",
-        "priority resolution",
-        "multi-lens tasks"
-      ],
-      "notFor": [
-        "simple tasks",
-        "direct edits",
-        "cases where one obvious constraint already decides the work"
-      ],
-      "needs": [
-        "goal",
-        "constraints",
-        "tensions",
-        "the priority that should lead if known",
-        "constraints that still matter"
-      ],
-      "outputMode": "Constraint reading and priority-shaped direction.",
-      "searchKeywords": [
-        "constraints",
-        "tradeoff",
-        "conflict",
-        "priority",
-        "lens",
-        "complex task",
-        "balance",
-        "decision",
-        "structure",
-        "golden ratio",
-        "fibonacci"
-      ],
-      "primaryTags": [
-        "constraints",
-        "tradeoff",
-        "conflict",
-        "multi-lens",
-        "complex",
-        "priority",
-        "tension",
-        "many-moving-parts"
-      ],
-      "secondaryTags": [
-        "fragile",
-        "unclear",
-        "system",
-        "non-trivial",
-        "balance",
-        "decision",
-        "idea",
-        "many-moving-parts",
-        "complex",
-        "priority",
-        "risk"
-      ],
-      "avoidTags": [
-        "simple-task",
-        "single-answer",
-        "quick-copy"
-      ],
-      "companions": [
-        "pre-task-expansion-protocol-v1",
-        "structural-shaping-protocol-v1",
-        "field-findings-and-bugs-protocol-v2"
-      ],
-      "order": 11,
-      "contextRequired": false,
-      "contextTags": [
-        "constraints",
-        "tradeoff",
-        "conflict",
-        "complex",
-        "priority",
-        "many-moving-parts",
-        "decision"
-      ],
-      "intentTags": [
-        "decision",
-        "next-move",
-        "priority",
-        "structure"
-      ]
-    },
-    {
-      "id": "pre-task-expansion-protocol-v1",
-      "title": "Pre-Task Expansion Protocol",
-      "path": "protocols/pre-task-expansion-protocol-v1.md",
-      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/pre-task-expansion-protocol-v1.md",
-      "rawUrl": "https://raw.githubusercontent.com/XxYouDeaDPunKxX/ai-protocol-kit/main/protocols/pre-task-expansion-protocol-v1.md",
-      "group": "Shaping",
-      "category": "Pre-task expansion",
-      "shortDescription": "Slow the AI down before it jumps to the obvious answer.",
-      "useWhen": "Use when the task needs alternative readings, surrounding context, grouped tensions, and a better problem shape before execution.",
-      "bestFor": [
-        "pre-task thinking",
-        "unclear requests",
-        "alternative readings",
-        "avoiding obvious answers",
-        "expanding the problem frame"
-      ],
-      "notFor": [
-        "tiny direct edits",
-        "urgent one-step tasks",
-        "already closed instructions"
-      ],
-      "needs": [
-        "the task prompt",
-        "available context",
-        "constraints",
-        "what kind of output may follow"
-      ],
-      "outputMode": "Expanded task reading and structured next move.",
-      "searchKeywords": [
-        "pre task",
-        "expansion",
-        "obvious answer",
-        "alternative reading",
-        "unclear request",
-        "framing",
-        "context",
-        "before execution"
-      ],
-      "primaryTags": [
-        "no-start",
-        "obvious-answer",
-        "expansion",
-        "alternative-readings",
-        "clarify",
-        "framing"
-      ],
-      "secondaryTags": [
-        "idea",
-        "vague",
-        "unclear",
-        "fragile",
-        "early-stage",
-        "many-moving-parts",
-        "next-move"
-      ],
-      "avoidTags": [
-        "final-output-only",
-        "already-decided"
-      ],
-      "companions": [
-        "idea-shaping-protocol-v1",
-        "structural-shaping-protocol-v1",
-        "phi-lens-protocol-v4-a"
-      ],
-      "order": 12,
-      "contextRequired": false,
-      "contextTags": [
-        "no-start",
-        "framing",
-        "expansion",
-        "vague",
-        "unclear",
-        "alternative-readings"
-      ],
-      "intentTags": [
-        "clarify",
-        "framing",
-        "next-move",
-        "structure"
-      ]
-    },
-    {
-      "id": "output-for-real-readers-protocol-v2",
-      "title": "Output for Real Readers Protocol",
-      "path": "protocols/output-for-real-readers-protocol-v2.md",
-      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/output-for-real-readers-protocol-v2.md",
-      "rawUrl": "https://raw.githubusercontent.com/XxYouDeaDPunKxX/ai-protocol-kit/main/protocols/output-for-real-readers-protocol-v2.md",
-      "group": "Writing",
-      "category": "Reader-facing output",
-      "shortDescription": "Make AI write for people instead of sounding like it is writing for another AI.",
-      "useWhen": "Use when guides, README text, emails, instructions, pages, forms, or other reader-facing material need purpose, tone, reader fit, and plain language closed before writing.",
-      "bestFor": [
-        "reader-facing text",
-        "guides",
-        "README sections",
-        "public copy",
-        "instructions",
-        "emails",
-        "forms"
-      ],
-      "notFor": [
-        "internal reasoning notes",
-        "raw technical specs",
-        "protocol-authoring unless the output is meant for real readers"
-      ],
-      "needs": [
-        "reader",
-        "purpose",
-        "tone",
-        "constraints",
-        "material to rewrite or produce",
-        "where it will appear"
-      ],
-      "outputMode": "Reader-fit copy.",
-      "searchKeywords": [
-        "writing",
-        "reader",
-        "voice",
-        "tone",
-        "guide",
-        "email",
-        "instructions",
-        "README",
-        "public copy",
-        "plain language",
-        "wrong voice"
-      ],
-      "primaryTags": [
-        "writing",
-        "reader",
-        "text",
-        "wrong-voice",
-        "readable",
-        "reader-facing",
-        "tone"
-      ],
-      "secondaryTags": [
-        "public",
-        "page",
-        "readme",
-        "guide",
-        "instructions",
-        "clarity",
-        "usable"
-      ],
-      "avoidTags": [
-        "machine-only",
-        "internal-data-only"
-      ],
-      "companions": [
-        "github-readme-framing-authoring-protocol-v2",
-        "public-page-publication-protocol-v2",
-        "html-page-and-tool-briefing-protocol-v2"
-      ],
-      "order": 13,
-      "contextRequired": false,
-      "contextTags": [
-        "text",
-        "reader-facing",
-        "wrong-voice",
-        "tone",
-        "readable",
-        "writing",
-        "reader"
-      ],
-      "intentTags": [
-        "readable",
-        "reader",
-        "writing",
-        "tone",
-        "reader-facing"
-      ]
-    },
-    {
-      "id": "structural-shaping-protocol-v1",
-      "title": "Structural Shaping Protocol",
-      "path": "protocols/structural-shaping-protocol-v1.md",
-      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/structural-shaping-protocol-v1.md",
-      "rawUrl": "https://raw.githubusercontent.com/XxYouDeaDPunKxX/ai-protocol-kit/main/protocols/structural-shaping-protocol-v1.md",
-      "group": "Shaping",
-      "category": "Operational structure",
-      "shortDescription": "Shape ambiguous input into operational form before synthesis.",
-      "useWhen": "Use when material is ambiguous and needs clearer boundaries, evidence, uncertainty, and final direction before producing output.",
-      "bestFor": [
-        "ambiguous input",
-        "mixed source material",
-        "synthesis prep",
-        "unclear artifact direction",
-        "deciding what belongs and what does not"
-      ],
-      "notFor": [
-        "direct copy edits",
-        "simple summaries",
-        "already well-structured tasks"
-      ],
-      "needs": [
-        "input material",
-        "intended artifact",
-        "what counts as source material",
-        "what is uncertain",
-        "known constraints"
-      ],
-      "outputMode": "Operational structure and synthesis frame.",
-      "searchKeywords": [
-        "structure",
-        "ambiguous input",
-        "source boundaries",
-        "synthesis",
-        "gates",
-        "evidence",
-        "artifact",
-        "organize material"
-      ],
-      "primaryTags": [
-        "structure",
-        "ambiguous",
-        "shaping",
-        "evidence",
-        "boundaries",
-        "artifact",
-        "source-boundary"
-      ],
-      "secondaryTags": [
-        "unclear",
-        "messy",
-        "synthesis",
-        "framing",
-        "inspectable",
-        "usable",
-        "idea",
-        "early-stage",
-        "clarify",
-        "no-start",
-        "decision",
-        "next-move",
-        "fragile"
-      ],
-      "avoidTags": [
-        "simple-copy",
-        "no-ambiguity"
-      ],
-      "companions": [
-        "idea-shaping-protocol-v1",
-        "pre-task-expansion-protocol-v1",
-        "system-reading-protocol-v0-2"
-      ],
-      "order": 14,
-      "contextRequired": false,
-      "contextTags": [
-        "ambiguous",
-        "messy",
-        "structure",
-        "source-boundary",
-        "synthesis",
-        "fragile",
-        "evidence"
-      ],
-      "intentTags": [
-        "structure",
-        "clarify",
-        "artifact",
-        "usable",
-        "inspectable"
-      ]
-    },
-    {
-      "id": "system-reading-protocol-v0-2",
-      "title": "System Reading Protocol",
-      "path": "protocols/system-reading-protocol-v0-2.md",
-      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/system-reading-protocol-v0-2.md",
-      "rawUrl": "https://raw.githubusercontent.com/XxYouDeaDPunKxX/ai-protocol-kit/main/protocols/system-reading-protocol-v0-2.md",
-      "group": "System Reading",
-      "category": "System interpretation",
-      "shortDescription": "Understand the gap between what a system claims to do and what it actually does before proposing fixes.",
-      "useWhen": "Use when a system, workflow, project, or behavior needs to be understood before anyone jumps into solutions.",
-      "bestFor": [
-        "system behavior",
-        "mismatch between stated and actual function",
-        "diagnosis before fixing",
-        "understanding what is really driving the behavior"
-      ],
-      "notFor": [
-        "immediate implementation",
-        "quick copywriting",
-        "tasks where the cause is already known"
-      ],
-      "needs": [
-        "declared intent",
-        "observed behavior",
-        "examples",
-        "context",
-        "what must not be assumed"
-      ],
-      "outputMode": "System reading and behavior explanation.",
-      "searchKeywords": [
-        "system",
-        "behavior",
-        "diagnosis",
-        "intent",
-        "observable behavior",
-        "principle",
-        "mismatch",
-        "reading",
-        "analysis"
-      ],
-      "primaryTags": [
-        "system",
-        "behavior",
-        "intent-gap",
-        "observe",
-        "understand",
-        "diagnose",
-        "really-happening"
-      ],
-      "secondaryTags": [
-        "unclear",
-        "trust-gap",
-        "no-premature-solution",
-        "analysis",
-        "workflow"
-      ],
-      "avoidTags": [
-        "direct-build",
-        "final-copy-only"
-      ],
-      "companions": [
-        "structural-shaping-protocol-v1",
-        "idea-shaping-protocol-v1",
-        "phi-lens-protocol-v4-a"
-      ],
-      "order": 15,
-      "contextRequired": false,
-      "contextTags": [
-        "system",
-        "behavior",
-        "intent-gap",
-        "really-happening",
-        "diagnose",
-        "workflow"
-      ],
-      "intentTags": [
-        "really-happening",
-        "system",
-        "diagnose",
-        "behavior"
-      ]
+      "groupSortKey": 7
     },
     {
       "id": "triad-ai-orchestration-protocol-v3",
@@ -1734,7 +1828,7 @@ window.APK_PICKER_DATA = {
       "path": "protocols/triad-ai-orchestration-protocol-v3.md",
       "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/triad-ai-orchestration-protocol-v3.md",
       "rawUrl": "https://raw.githubusercontent.com/XxYouDeaDPunKxX/ai-protocol-kit/main/protocols/triad-ai-orchestration-protocol-v3.md",
-      "group": "Orchestration",
+      "group": "⚙️ Orchestration",
       "category": "Multi-AI review loop",
       "shortDescription": "Run a review loop between an executing AI and a reviewing AI while you keep final control.",
       "useWhen": "Use when Codex, ChatGPT, repo snapshots, pushed diffs, files, or review findings need a controlled loop across tools.",
@@ -1834,7 +1928,8 @@ window.APK_PICKER_DATA = {
         "session",
         "review",
         "evidence"
-      ]
+      ],
+      "groupSortKey": 7
     }
   ],
   "scoring": {
@@ -1854,7 +1949,7 @@ window.APK_PICKER_DATA = {
     "dealContextBonus": 1.6
   },
   "uiCopy": {
-    "emptyResult": "Start with one signal in the first row. Add friction only if it changes the path.",
-    "noMatch": "This kit may not cover the whole job. Use the closest protocol only for the part it actually covers."
+    "emptyResult": "Start with what is in front of you. Add friction only if it changes the path.",
+    "noMatch": "No clean match. Use the closest protocol only for the part it actually governs."
   }
 };

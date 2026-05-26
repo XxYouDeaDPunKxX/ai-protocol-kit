@@ -21,6 +21,22 @@
       "'": "&#39;"
     })[char]);
 
+  function groupKey(group) {
+    const value = String(group || "").toLowerCase();
+    if (value.includes("github")) return "github";
+    if (value.includes("reasoning")) return "reasoning";
+    if (value.includes("shaping")) return "shaping";
+    if (value.includes("briefing")) return "briefing";
+    if (value.includes("writing")) return "writing";
+    if (value.includes("review")) return "review";
+    if (value.includes("orchestration")) return "orchestration";
+    return "neutral";
+  }
+
+  function protocolGroups(protocol) {
+    return [protocol.group].concat(protocol.secondaryGroups || []).filter(Boolean);
+  }
+
   const stepsEl = $("#pickerSteps");
   const selectedRailEl = $("#selectedRail");
   const resultEl = $("#resultPanel");
@@ -114,7 +130,7 @@
 
     groupFiltersEl.innerHTML = (data.groups || ["All"]).map((group) => `
       <button
-        class="group-chip"
+        class="group-chip group-${escapeHtml(groupKey(group))}"
         type="button"
         aria-pressed="${group === "All"}"
         data-group-filter="${escapeHtml(group)}"
@@ -228,7 +244,7 @@
     return Array.from(new Set(ids))
       .map(getProtocol)
       .filter(Boolean)
-      .slice(0, 3);
+      .slice(0, 2);
   }
 
   function renderRelated(list) {
@@ -239,15 +255,25 @@
       return;
     }
 
-    relatedEl.innerHTML = list.map((protocol) => `
+    relatedEl.innerHTML = `
+      <div class="second-control-head">
+        <span class="second-control-kicker">Optional second control</span>
+        <h4>Useful if the path needs another rail</h4>
+        <p>Keep the main protocol as the starting point. Add one of these only when it controls a different layer: artifact, reasoning, publication, or session.</p>
+      </div>
+      <div class="second-control-cards">
+    ` + list.map((protocol) => `
       <article class="related-card">
         <div>
+          <span class="related-label">Secondary fit</span>
           <h4>${escapeHtml(protocol.title)}</h4>
           <p>${escapeHtml(protocol.category)}</p>
         </div>
         <a href="${escapeHtml(protocol.url)}" target="_blank" rel="noopener noreferrer">Open</a>
       </article>
-    `).join("");
+    `).join("") + `
+      </div>
+    `;
   }
 
   function renderResult() {
@@ -315,11 +341,17 @@
   }
 
   function protocolRow(protocol) {
+    const groups = protocolGroups(protocol);
+    const secondary = (protocol.secondaryGroups || []).length
+      ? `<span class="secondary-fit">also: ${escapeHtml((protocol.secondaryGroups || []).join(", "))}</span>`
+      : "";
+
     return `
-      <article class="protocol-row" data-protocol-id="${escapeHtml(protocol.id)}" data-group="${escapeHtml(protocol.group)}" data-search="${escapeHtml(protocolSearchText(protocol))}">
+      <article class="protocol-row group-${escapeHtml(groupKey(protocol.group))}" data-protocol-id="${escapeHtml(protocol.id)}" data-group="${escapeHtml(protocol.group)}" data-groups="${escapeHtml(groups.join("|"))}" data-search="${escapeHtml(protocolSearchText(protocol))}">
         <div class="row-meta">
           <span>${escapeHtml(protocol.group)}</span>
           <span>${escapeHtml(protocol.category)}</span>
+          ${secondary}
         </div>
         <div class="row-main">
           <p class="match-label">Matches current path</p>
@@ -358,7 +390,8 @@
     const normalizedQuery = query.trim().toLowerCase();
 
     $$("#protocolGrid .protocol-row").forEach((row) => {
-      const groupMatch = activeGroup === "All" || row.dataset.group === activeGroup;
+      const rowGroups = String(row.dataset.groups || row.dataset.group || "").split("|");
+      const groupMatch = activeGroup === "All" || rowGroups.includes(activeGroup);
       const searchMatch = !normalizedQuery || (row.dataset.search || "").includes(normalizedQuery);
       const show = groupMatch && searchMatch;
 
@@ -452,6 +485,22 @@
     showToast("Reset.");
   });
 
+
+  function openIndexWhenLinked() {
+    const browser = document.querySelector("#protocolsBrowser");
+    if (!browser) return;
+    if (window.location.hash === "#protocols") browser.open = true;
+  }
+
+  window.addEventListener("hashchange", openIndexWhenLinked);
+  document.querySelectorAll('a[href="#protocols"]').forEach((link) => {
+    link.addEventListener("click", () => {
+      const browser = document.querySelector("#protocolsBrowser");
+      if (browser) browser.open = true;
+    });
+  });
+
+  openIndexWhenLinked();
   renderSteps();
   renderGroups();
   renderProtocolIndex();

@@ -23,6 +23,48 @@ main        protocol source files, repository README, license
 gh-pages    active GitHub Pages source, static picker page
 ```
 
+
+## 🧭 Current Information Architecture
+
+This version is router-first. The page should answer “what should I use now?” before it asks the visitor to browse the whole library.
+
+Primary lanes:
+
+```text
+🧩 Shaping                 early task shape and usable structure
+🧠 Reasoning               constraint interaction, system reading, pre-task expansion
+🧱 Briefing / Build         artifact and implementation briefs
+✍️ Writing                 reader-facing output
+🐞 Review                  findings, bugs, evidence capture
+🧿 GitHub / Public Web      repositories, Pages, README, public pages, discovery files
+⚙️ Orchestration            tool-aware sessions and multi-AI loops
+```
+
+Groups are not mutually exclusive. Some protocols have a primary lane and secondary fits.
+
+Examples:
+
+* `Pre-Task Expansion` is primarily Shaping, but also Reasoning.
+* `System Reading` is primarily Reasoning, but also useful during Shaping and Review.
+* `Public Page Publication` belongs in the GitHub / Public Web lane for this project surface.
+* `PHI-Lens` is Reasoning governance, not a normal review or publication protocol.
+
+## 🎨 Visual Hierarchy
+
+Use color by function, not decoration:
+
+```text
+teal      primary actions and selected picker choices
+gold      current recommendation / protocol path / GitHub-public lane
+blue-violet reasoning and constraint governance
+coral     review / findings
+purple    writing / copy protocol affordance
+blue      orchestration
+muted gray secondary structure and collapsed index
+```
+
+The full protocol index is intentionally collapsed by default. The router is the product; the index is the fallback.
+
 ## 📌 What It Contains
 
 The page includes:
@@ -109,6 +151,7 @@ id
 title
 group
 category
+secondaryGroups
 shortDescription
 useWhen
 notFor
@@ -183,6 +226,7 @@ id
 title
 group
 category
+secondaryGroups
 shortDescription
 useWhen
 notFor
@@ -359,3 +403,13 @@ AI assistance does not make the project automatically correct, complete, or suit
 This project is licensed under `CC BY-SA 4.0` (`Creative Commons Attribution-ShareAlike 4.0 International`).
 
 See [`LICENSE`](LICENSE).
+
+
+## Layout note
+
+This version keeps the picker full-width and horizontal. The result card sits below the picker on normal desktop widths, with a compact two-column result layout on wide screens. The protocol index remains collapsed by default.
+
+
+## v3 layout note
+
+The router is intentionally stacked: picker full-width first, result panel below it. This avoids the compressed side-panel layout on desktop.
