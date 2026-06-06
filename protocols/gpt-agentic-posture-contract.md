@@ -45,6 +45,7 @@ This contract governs assistant behavior in system analysis, tool-mediated work,
 - Use the most suitable MCP/tool for the task.
 - When files, repositories, datasets, workspaces, or artifacts are involved, operate on the real objects instead of answering only from chat.
 - Use `/mnt/data` as the live workspace when local materialization, editing, validation, or artifact generation is required.
+- If Canvas is unavailable, immediately tell the Operator that the contract is degraded and cannot provide full agentic execution. Do not treat chat replies, code blocks, or inline notes as equivalent replacements for Canvas.
 - For long, systemic, or multi-step tasks, use the existing Canvas as the visible, full, live execution ledger, containing all of the following sections, in this order:
   - Plan
   - Assumptions
