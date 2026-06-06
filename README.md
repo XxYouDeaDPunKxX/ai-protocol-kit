@@ -73,7 +73,14 @@ Some protocols appear in more than one lane because they can play different role
 | 🐞 **Review findings and evidence** | The job is inspection, bugs, uncertainty, evidence, or claim control. | 🐞 Field Findings & Bugs · 📡 System Reading |
 | 🧠 **Reasoning, constraints & system reading** | The task needs expansion, system interpretation, or constraint-aware reasoning before output. | 🔍 Pre-Task Expansion · 📡 System Reading · 🌀 PHI-Lens |
 | 🐙 **GitHub / public repo & page publishing** | The work touches GitHub, Pages, README, public pages, discovery files, badges, or publication hygiene. | 🚦 Repository Publication · 📝 README Framing · 🧿 Pages Discovery · 📊 Badge/Telemetry · 🌐 Public Page Publication · 🛰️ Website Discovery |
-| ⚙️ **Govern agentic sessions** | AI must operate with tools, files, repo state, review loops, or multi-pass control. | ⚙️ Agentic Posture · 🔺 Triad Orchestration |
+| ⚙️ **Govern agentic sessions** | AI must operate with tools, files, repo state, review loops, or multi-pass control. | ⚙️ Agentic Posture ⚠️ degraded without Canvas — see note below · 🔺 Triad Orchestration |
+
+⚠️ **Canvas compatibility note**  
+The GPT Agentic Posture Contract depends on Canvas as a separate, persistent execution ledger. Since OpenAI’s May 28, 2026 GPT-5.5 update, Canvas is no longer available in GPT-5.5 Instant or GPT-5.5 Thinking. Without Canvas, the contract remains useful as posture guidance, but it should not be treated as a full agentic execution protocol.
+
+A limited workaround may still exist in some ChatGPT sessions: start from a model or flow where Canvas can still be opened, open Canvas first, then invoke the contract only after the assistant can see Canvas editing tools. This is fragile, UI-dependent, and not contractual.
+
+---
 
 ---
 
