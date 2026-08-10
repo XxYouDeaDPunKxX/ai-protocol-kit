@@ -43,6 +43,11 @@ Use these when the problem is not just unclear, but structurally easy to collaps
 - 📡 [System Reading Protocol v0.2](protocols/system-reading-protocol-v0-2.md)
 - 🌀 [PHI-Lens Protocol v4.a](protocols/phi-lens-protocol-v4-a.md)
 
+### 🏷️ I need a conversation title I can find later
+Use this when a long, multi-phase, or multi-topic AI conversation needs a compact title that preserves its retrieval identity instead of merely summarizing the latest turns. 🔎💬🗂️
+
+- 🏷️ [Chat Title Protocol v1.2.3](protocols/chat-title-protocol-v1-2-3.md)
+
 ### 🐙 I am working on GitHub, GitHub Pages, a public repo, or a project page
 Use these when the work touches repositories, README files, GitHub Pages, badges, telemetry, discovery files, public project pages, or publication hygiene. 🐙📦🌐🚀
 
@@ -72,6 +77,7 @@ Some protocols appear in more than one lane because they can play different role
 | 🧾 **Brief the artifact** | AI needs a clear brief before writing, building, or structuring output. | 🧱 HTML Page & Tool Briefing · 🗣️ Output for Real Readers |
 | 🐞 **Review findings and evidence** | The job is inspection, bugs, uncertainty, evidence, or claim control. | 🐞 Field Findings & Bugs · 📡 System Reading |
 | 🧠 **Reasoning, constraints & system reading** | The task needs expansion, system interpretation, or constraint-aware reasoning before output. | 🔍 Pre-Task Expansion · 📡 System Reading · 🌀 PHI-Lens |
+| 🏷️ **Conversation retrieval** | A conversation needs a compact, grounded title that remains recognizable across long or multi-topic chat histories. | 🏷️ Chat Title |
 | 🐙 **GitHub / public repo & page publishing** | The work touches GitHub, Pages, README, public pages, discovery files, badges, or publication hygiene. | 🚦 Repository Publication · 📝 README Framing · 🧿 Pages Discovery · 📊 Badge/Telemetry · 🌐 Public Page Publication · 🛰️ Website Discovery |
 | ⚙️ **Govern agentic sessions** | AI must operate with tools, files, repo state, review loops, or multi-pass control. | ⚙️ Agentic Posture ⚠️ degraded without Canvas — see note below · 🔺 Triad Orchestration |
 
@@ -140,6 +146,7 @@ Use the smallest set that fits the task. 🧘‍♂️
 | 🚦 [GitHub Repository Publication Preparation Protocol v2](protocols/github-repository-publication-preparation-protocol-v2.md) | Prepare a repository for clean GitHub publication, forcing project classification, workspace and risk audit, minimal file/package decisions, GitHub feature choices, and confirmation before commits, remotes, Pages, or push. |
 | 📊 [GitHub Badge, Telemetry & Counter Protocol v1.2.3](protocols/github-badge-telemetry-counter-protocol-v1-2-3.md) | Decide which badges, counters, analytics, traffic checks, or validation checks make sense for a GitHub repo or GitHub Page without adding vanity widgets. |
 | 📝 [GitHub README Framing and Authoring Protocol v2](protocols/github-readme-framing-authoring-protocol-v2.md) | Write or restructure a GitHub repository README from repository evidence, reader fit, and the real job the README must perform. |
+| 🏷️ [Chat Title Protocol v1.2.3](protocols/chat-title-protocol-v1-2-3.md) | Generate a compact, grounded retrieval title for an AI conversation by reading the complete available transcript, separating related and independent topics, and resisting recency or opening bias. |
 | ⚙️ [GPT Agentic Posture Contract](protocols/gpt-agentic-posture-contract.md) | Make ChatGPT work more like Codex: tool-aware, grounded in real files and artifacts, ledger-based, verification-oriented, and willing to stop when the task is not ready. |
 | 🌐 [Public Page Publication Protocol v2](protocols/public-page-publication-protocol-v2.md) | Prepare, restructure, or publish a public page, landing page, showcase, portfolio page, documentation entrypoint, or GitHub Pages site with page role, audience, metadata, accessibility, links, visual identity, and publication risks closed before deploy or push. |
 | 🧩 [Idea Shaping Protocol v1](protocols/idea-shaping-protocol-v1.md) | Turn a rough idea into a clear structure before asking AI to write, plan, design, or build anything. |

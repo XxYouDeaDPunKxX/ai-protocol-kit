@@ -1,4 +1,4 @@
-# CHAT_TITLE_PROTOCOL_V1.2.3
+# Chat Title Protocol v1.2.3
 
 ## IDENTITY
 
