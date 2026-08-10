@@ -24,6 +24,7 @@
   function groupKey(group) {
     const value = String(group || "").toLowerCase();
     if (value.includes("github")) return "github";
+    if (value.includes("conversation")) return "conversation";
     if (value.includes("reasoning")) return "reasoning";
     if (value.includes("shaping")) return "shaping";
     if (value.includes("briefing")) return "briefing";

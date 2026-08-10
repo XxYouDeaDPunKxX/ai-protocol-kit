@@ -33,6 +33,7 @@ Primary lanes:
 ```text
 🧩 Shaping                 early task shape and usable structure
 🧠 Reasoning               constraint interaction, system reading, pre-task expansion
+🏷️ Conversation Retrieval grounded titles for long or multi-topic AI conversations
 🧱 Briefing / Build         artifact and implementation briefs
 ✍️ Writing                 reader-facing output
 🐞 Review                  findings, bugs, evidence capture
@@ -57,6 +58,7 @@ Use color by function, not decoration:
 teal      primary actions and selected picker choices
 gold      current recommendation / protocol path / GitHub-public lane
 blue-violet reasoning and constraint governance
+lime      conversation retrieval
 coral     review / findings
 purple    writing / copy protocol affordance
 blue      orchestration

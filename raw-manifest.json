@@ -24,6 +24,15 @@
   },
   "protocols": [
     {
+      "id": "chat-title-protocol-v1-2-3",
+      "title": "Chat Title Protocol v1.2.3",
+      "group": "🏷️ Conversation Retrieval",
+      "category": "Conversation retrieval title",
+      "description": "Generate a compact, grounded title that keeps a long or multi-topic AI conversation findable.",
+      "use_when": "Use when an AI chat or conversation transcript needs a stable retrieval title based on the complete available source rather than the opening, latest turn, longest phase, or a generic summary.",
+      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/chat-title-protocol-v1-2-3.md"
+    },
+    {
       "id": "github-pages-discovery-set-protocol-v1",
       "title": "GitHub Pages Discovery Set Protocol",
       "group": "🧿 GitHub / Public Web",

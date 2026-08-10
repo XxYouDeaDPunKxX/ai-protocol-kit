@@ -743,6 +743,7 @@ p { color: var(--soft); }
   --group-review: #ff9ab3;
   --group-github: #f0b84f;
   --group-orchestration: #78aaff;
+  --group-conversation: #d0e66f;
   --group-neutral: #9fb4b7;
 }
 
@@ -830,6 +831,7 @@ p { color: var(--soft); }
 .group-review { --row-accent: var(--group-review); --chip-accent: var(--group-review); }
 .group-github { --row-accent: var(--group-github); --chip-accent: var(--group-github); }
 .group-orchestration { --row-accent: var(--group-orchestration); --chip-accent: var(--group-orchestration); }
+.group-conversation { --row-accent: var(--group-conversation); --chip-accent: var(--group-conversation); }
 .group-neutral { --row-accent: var(--group-neutral); --chip-accent: var(--group-neutral); }
 
 .group-chip {

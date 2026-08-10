@@ -9,6 +9,7 @@ window.APK_PICKER_DATA = {
     "All",
     "🧩 Shaping",
     "🧠 Reasoning",
+    "🏷️ Conversation Retrieval",
     "🧱 Briefing / Build",
     "✍️ Writing",
     "🐞 Review",
@@ -78,6 +79,16 @@ window.APK_PICKER_DATA = {
             "tradeoff",
             "priority",
             "unclear"
+          ]
+        },
+        {
+          "label": "a conversation or chat history",
+          "tags": [
+            "conversation",
+            "chat-history",
+            "transcript",
+            "retrieval-title",
+            "context"
           ]
         },
         {
@@ -155,6 +166,16 @@ window.APK_PICKER_DATA = {
             "risk",
             "constraints",
             "harden"
+          ]
+        },
+        {
+          "label": "the title loses the real conversation",
+          "tags": [
+            "generic-title",
+            "recency-bias",
+            "omitted-topics",
+            "hard-to-retrieve",
+            "multi-topic"
           ]
         },
         {
@@ -291,6 +312,16 @@ window.APK_PICKER_DATA = {
             "closure",
             "operational",
             "continuation"
+          ]
+        },
+        {
+          "label": "give it a useful retrieval title",
+          "tags": [
+            "retrieval-title",
+            "grounded-title",
+            "recognizable",
+            "long-term",
+            "conversation-title"
           ]
         },
         {
@@ -1930,6 +1961,102 @@ window.APK_PICKER_DATA = {
         "evidence"
       ],
       "groupSortKey": 7
+    },
+    {
+      "id": "chat-title-protocol-v1-2-3",
+      "title": "Chat Title Protocol v1.2.3",
+      "path": "protocols/chat-title-protocol-v1-2-3.md",
+      "url": "https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/chat-title-protocol-v1-2-3.md",
+      "rawUrl": "https://raw.githubusercontent.com/XxYouDeaDPunKxX/ai-protocol-kit/main/protocols/chat-title-protocol-v1-2-3.md",
+      "group": "🏷️ Conversation Retrieval",
+      "category": "Conversation retrieval title",
+      "shortDescription": "Generate a compact, grounded title that keeps a long or multi-topic AI conversation findable.",
+      "useWhen": "Use when an AI chat or conversation transcript needs a stable retrieval title based on the complete available source rather than the opening, latest turn, longest phase, or a generic summary.",
+      "bestFor": [
+        "long AI conversations",
+        "multi-phase chat histories",
+        "multi-topic conversations",
+        "stable archive and sidebar titles",
+        "local or corpus-aware title generation"
+      ],
+      "notFor": [
+        "article or document headlines",
+        "marketing copy",
+        "creative naming without source grounding",
+        "conversation summaries",
+        "platforms that cannot expose the available transcript"
+      ],
+      "needs": [
+        "the complete available conversation transcript",
+        "the protocol invoked after the source conversation",
+        "a local or corpus execution choice",
+        "a test or apply output choice"
+      ],
+      "outputMode": "One grounded retrieval title, or a test set with valid alternatives, topology, segment count, and flags.",
+      "searchKeywords": [
+        "chat title",
+        "conversation title",
+        "retrieval title",
+        "conversation archive",
+        "chat history",
+        "transcript",
+        "multi-topic chat",
+        "recency bias",
+        "opening bias",
+        "grounded title",
+        "ChatGPT title",
+        "Claude conversation",
+        "Gemini chat",
+        "AI chat"
+      ],
+      "primaryTags": [
+        "conversation",
+        "chat-history",
+        "transcript",
+        "retrieval-title",
+        "conversation-title",
+        "grounded-title",
+        "generic-title",
+        "recency-bias",
+        "omitted-topics",
+        "hard-to-retrieve",
+        "multi-topic"
+      ],
+      "secondaryTags": [
+        "context",
+        "recognizable",
+        "long-term",
+        "session",
+        "structure",
+        "archive",
+        "organization",
+        "complete-source"
+      ],
+      "avoidTags": [
+        "marketing-copy",
+        "article-title",
+        "creative-title",
+        "summary-only"
+      ],
+      "companions": [],
+      "order": 17,
+      "contextRequired": true,
+      "contextTags": [
+        "conversation",
+        "chat-history",
+        "transcript",
+        "retrieval-title",
+        "conversation-title",
+        "multi-topic"
+      ],
+      "intentTags": [
+        "retrieval-title",
+        "grounded-title",
+        "recognizable",
+        "long-term",
+        "conversation-title"
+      ],
+      "groupSortKey": 8
     }
   ],
   "scoring": {

@@ -12,13 +12,19 @@ The page starts from the work in front of the user, then suggests one primary pr
 
 ## Group model
 
-Some groups are workflow stages. GitHub / Public Web is a domain lane. Reasoning is a meta lane for constraint interaction and system interpretation.
+Some groups are workflow stages. GitHub / Public Web and Conversation Retrieval are domain lanes. Reasoning is a meta lane for constraint interaction and system interpretation.
 
 ## How to use
 
 Pick the smallest protocol that fits, give it to the AI before execution, then state the task, sources, constraints, and stop conditions.
 
 ## Protocols
+
+### Chat Title Protocol v1.2.3
+Group: 🏷️ Conversation Retrieval
+Category: Conversation retrieval title
+Use when: Use when an AI chat or conversation transcript needs a stable retrieval title based on the complete available source rather than the opening, latest turn, longest phase, or a generic summary.
+URL: https://github.com/XxYouDeaDPunKxX/ai-protocol-kit/blob/main/protocols/chat-title-protocol-v1-2-3.md
 
 ### GitHub Pages Discovery Set Protocol
 Group: 🧿 GitHub / Public Web
